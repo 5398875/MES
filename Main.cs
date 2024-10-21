@@ -27,7 +27,8 @@ namespace MES
         private void Main_Load(object sender, EventArgs e)
         {
             tableLayoutPanel_Full.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, tableLayoutPanel_Full.Width, tableLayoutPanel_Full.Height, 25, 25));
-            make_Menu_Round(Dashboard); make_Menu_Round(Monitoring_Test); make_Menu_Round(Employee);
+            make_Menu_Round(Dashboard);         make_Menu_Round(Monitoring_Test);   make_Menu_Round(Employee);      make_Menu_Round(Operation);
+            make_SubMenu_Round(Operation_Rate); make_SubMenu_Round(Operation_Analyze);
             Dashboard.Checked = true;
             button_Menu_Click(Dashboard, EventArgs.Empty);
             label_User_Name.Text = User_info.User_name;
@@ -37,6 +38,11 @@ namespace MES
         private void make_Menu_Round(CheckBox checkbox)
         {
             checkbox.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(-50, 0, 200, 72, 72, 72));
+        }
+
+        private void make_SubMenu_Round(CheckBox checkbox)
+        {
+            checkbox.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(-50, 0, 200, 48, 48, 48));
         }
 
         bool Collapsed;
@@ -127,6 +133,8 @@ namespace MES
                 case "Employee" : form_ToShow = new Employee(); break;
                 case "Monitoring_Test" : form_ToShow = new Monitoring_Test(); break;
                 case "Dashboard" : form_ToShow = new Dashboard(); break;
+                case "Operation_Rate": form_ToShow = new Operation_Rate(); break;
+                case "Operation_Analyze": form_ToShow = new Operation_Analyze(); break;
             }
             
             checkBox_Menu.ForeColor = Color.FromArgb(235, 22, 22);

@@ -42,11 +42,10 @@
             this.Menu1_1 = new System.Windows.Forms.Button();
             this.panel_Menu1_2 = new System.Windows.Forms.Panel();
             this.Menu1_2 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel_Menu2_Container = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel_Menu2 = new System.Windows.Forms.Panel();
-            this.Menu2 = new System.Windows.Forms.CheckBox();
+            this.flowLayoutPanel_Operation_Container = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel_Operation = new System.Windows.Forms.Panel();
+            this.Operation = new System.Windows.Forms.CheckBox();
             this.panel_Operation_Rate = new System.Windows.Forms.Panel();
-            this.Menu_Operation_Rate = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel_Menu3 = new System.Windows.Forms.Panel();
             this.Monitoring_Test = new System.Windows.Forms.CheckBox();
@@ -56,7 +55,6 @@
             this.panel_logo = new System.Windows.Forms.Panel();
             this.timer_Expand_Menu = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel_Left = new System.Windows.Forms.TableLayoutPanel();
-            this.Button_Close = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel_Full = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel_Right = new System.Windows.Forms.TableLayoutPanel();
             this.panel_Main = new System.Windows.Forms.Panel();
@@ -65,8 +63,10 @@
             this.tableLayoutPanel_User_Right = new System.Windows.Forms.TableLayoutPanel();
             this.label_User_Name = new System.Windows.Forms.Label();
             this.label_User_Position = new System.Windows.Forms.Label();
-            this.panel_Menu_Operation_Rate_Analiyze = new System.Windows.Forms.Panel();
-            this.Menu_Operation_Rate_Analiyze = new System.Windows.Forms.Button();
+            this.panel_Operation_Rate_Analyze = new System.Windows.Forms.Panel();
+            this.Button_Close = new System.Windows.Forms.CheckBox();
+            this.Operation_Rate = new System.Windows.Forms.CheckBox();
+            this.Operation_Analyze = new System.Windows.Forms.CheckBox();
             this.flowLayoutPanel_Left.SuspendLayout();
             this.panel_User.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -75,8 +75,8 @@
             this.panel_Menu1.SuspendLayout();
             this.panel_Menu1_1.SuspendLayout();
             this.panel_Menu1_2.SuspendLayout();
-            this.flowLayoutPanel_Menu2_Container.SuspendLayout();
-            this.panel_Menu2.SuspendLayout();
+            this.flowLayoutPanel_Operation_Container.SuspendLayout();
+            this.panel_Operation.SuspendLayout();
             this.panel_Operation_Rate.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel_Menu3.SuspendLayout();
@@ -88,7 +88,7 @@
             this.tableLayoutPanel_Right.SuspendLayout();
             this.tableLayoutPanel_User.SuspendLayout();
             this.tableLayoutPanel_User_Right.SuspendLayout();
-            this.panel_Menu_Operation_Rate_Analiyze.SuspendLayout();
+            this.panel_Operation_Rate_Analyze.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel_Left
@@ -98,7 +98,7 @@
             this.flowLayoutPanel_Left.Controls.Add(this.panel_User);
             this.flowLayoutPanel_Left.Controls.Add(this.flowLayoutPanel2);
             this.flowLayoutPanel_Left.Controls.Add(this.flowLayoutPanel_Menu1_Container);
-            this.flowLayoutPanel_Left.Controls.Add(this.flowLayoutPanel_Menu2_Container);
+            this.flowLayoutPanel_Left.Controls.Add(this.flowLayoutPanel_Operation_Container);
             this.flowLayoutPanel_Left.Controls.Add(this.flowLayoutPanel1);
             this.flowLayoutPanel_Left.Controls.Add(this.flowLayoutPanel_Menu4);
             this.flowLayoutPanel_Left.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -269,84 +269,64 @@
             this.Menu1_2.Text = "menu1_2";
             this.Menu1_2.UseVisualStyleBackColor = false;
             // 
-            // flowLayoutPanel_Menu2_Container
+            // flowLayoutPanel_Operation_Container
             // 
-            this.flowLayoutPanel_Menu2_Container.Controls.Add(this.panel_Menu2);
-            this.flowLayoutPanel_Menu2_Container.Controls.Add(this.panel_Operation_Rate);
-            this.flowLayoutPanel_Menu2_Container.Controls.Add(this.panel_Menu_Operation_Rate_Analiyze);
-            this.flowLayoutPanel_Menu2_Container.Location = new System.Drawing.Point(0, 304);
-            this.flowLayoutPanel_Menu2_Container.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel_Menu2_Container.MaximumSize = new System.Drawing.Size(232, 216);
-            this.flowLayoutPanel_Menu2_Container.MinimumSize = new System.Drawing.Size(232, 72);
-            this.flowLayoutPanel_Menu2_Container.Name = "flowLayoutPanel_Menu2_Container";
-            this.flowLayoutPanel_Menu2_Container.Size = new System.Drawing.Size(232, 216);
-            this.flowLayoutPanel_Menu2_Container.TabIndex = 5;
+            this.flowLayoutPanel_Operation_Container.Controls.Add(this.panel_Operation);
+            this.flowLayoutPanel_Operation_Container.Controls.Add(this.panel_Operation_Rate);
+            this.flowLayoutPanel_Operation_Container.Controls.Add(this.panel_Operation_Rate_Analyze);
+            this.flowLayoutPanel_Operation_Container.Location = new System.Drawing.Point(0, 304);
+            this.flowLayoutPanel_Operation_Container.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel_Operation_Container.MaximumSize = new System.Drawing.Size(232, 168);
+            this.flowLayoutPanel_Operation_Container.MinimumSize = new System.Drawing.Size(232, 72);
+            this.flowLayoutPanel_Operation_Container.Name = "flowLayoutPanel_Operation_Container";
+            this.flowLayoutPanel_Operation_Container.Size = new System.Drawing.Size(232, 72);
+            this.flowLayoutPanel_Operation_Container.TabIndex = 5;
             // 
-            // panel_Menu2
+            // panel_Operation
             // 
-            this.panel_Menu2.Controls.Add(this.Menu2);
-            this.panel_Menu2.Location = new System.Drawing.Point(0, 0);
-            this.panel_Menu2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel_Menu2.Name = "panel_Menu2";
-            this.panel_Menu2.Size = new System.Drawing.Size(232, 72);
-            this.panel_Menu2.TabIndex = 2;
+            this.panel_Operation.Controls.Add(this.Operation);
+            this.panel_Operation.Location = new System.Drawing.Point(0, 0);
+            this.panel_Operation.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_Operation.Name = "panel_Operation";
+            this.panel_Operation.Size = new System.Drawing.Size(232, 72);
+            this.panel_Operation.TabIndex = 2;
             // 
-            // Menu2
+            // Operation
             // 
-            this.Menu2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Menu2.AutoSize = true;
-            this.Menu2.BackColor = System.Drawing.Color.Transparent;
-            this.Menu2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Menu2.FlatAppearance.BorderSize = 0;
-            this.Menu2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.Menu2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.Menu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menu2.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Menu2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(114)))), ((int)(((byte)(147)))));
-            this.Menu2.Location = new System.Drawing.Point(0, 0);
-            this.Menu2.Margin = new System.Windows.Forms.Padding(0);
-            this.Menu2.Name = "Menu2";
-            this.Menu2.Size = new System.Drawing.Size(232, 72);
-            this.Menu2.TabIndex = 4;
-            this.Menu2.Text = "가동률";
-            this.Menu2.UseVisualStyleBackColor = false;
-            this.Menu2.CheckedChanged += new System.EventHandler(this.button_Expand_Menu_Click);
-            this.Menu2.MouseEnter += new System.EventHandler(this.button_Menu_MouseEnter);
-            this.Menu2.MouseLeave += new System.EventHandler(this.button_Menu_MouseLeave);
+            this.Operation.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Operation.AutoSize = true;
+            this.Operation.BackColor = System.Drawing.Color.Transparent;
+            this.Operation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Operation.FlatAppearance.BorderSize = 0;
+            this.Operation.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.Operation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.Operation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Operation.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Operation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(114)))), ((int)(((byte)(147)))));
+            this.Operation.Location = new System.Drawing.Point(0, 0);
+            this.Operation.Margin = new System.Windows.Forms.Padding(0);
+            this.Operation.Name = "Operation";
+            this.Operation.Size = new System.Drawing.Size(232, 72);
+            this.Operation.TabIndex = 4;
+            this.Operation.Text = "가동률";
+            this.Operation.UseVisualStyleBackColor = false;
+            this.Operation.CheckedChanged += new System.EventHandler(this.button_Expand_Menu_Click);
+            this.Operation.MouseEnter += new System.EventHandler(this.button_Menu_MouseEnter);
+            this.Operation.MouseLeave += new System.EventHandler(this.button_Menu_MouseLeave);
             // 
             // panel_Operation_Rate
             // 
-            this.panel_Operation_Rate.Controls.Add(this.Menu_Operation_Rate);
+            this.panel_Operation_Rate.Controls.Add(this.Operation_Rate);
             this.panel_Operation_Rate.Location = new System.Drawing.Point(0, 72);
             this.panel_Operation_Rate.Margin = new System.Windows.Forms.Padding(0);
             this.panel_Operation_Rate.Name = "panel_Operation_Rate";
-            this.panel_Operation_Rate.Size = new System.Drawing.Size(232, 72);
+            this.panel_Operation_Rate.Size = new System.Drawing.Size(232, 48);
             this.panel_Operation_Rate.TabIndex = 4;
-            // 
-            // Menu_Operation_Rate
-            // 
-            this.Menu_Operation_Rate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(33)))), ((int)(((byte)(40)))));
-            this.Menu_Operation_Rate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Menu_Operation_Rate.FlatAppearance.BorderSize = 0;
-            this.Menu_Operation_Rate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menu_Operation_Rate.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Menu_Operation_Rate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(114)))), ((int)(((byte)(147)))));
-            this.Menu_Operation_Rate.Location = new System.Drawing.Point(0, 0);
-            this.Menu_Operation_Rate.Margin = new System.Windows.Forms.Padding(0);
-            this.Menu_Operation_Rate.MaximumSize = new System.Drawing.Size(232, 72);
-            this.Menu_Operation_Rate.Name = "Menu_Operation_Rate";
-            this.Menu_Operation_Rate.Size = new System.Drawing.Size(232, 72);
-            this.Menu_Operation_Rate.TabIndex = 3;
-            this.Menu_Operation_Rate.Text = "가동률 현황";
-            this.Menu_Operation_Rate.UseVisualStyleBackColor = false;
-            this.Menu_Operation_Rate.Click += new System.EventHandler(this.button_Menu_Click);
-            this.Menu_Operation_Rate.MouseEnter += new System.EventHandler(this.button_Menu_MouseEnter);
-            this.Menu_Operation_Rate.MouseLeave += new System.EventHandler(this.button_Menu_MouseLeave);
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.panel_Menu3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 536);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 376);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(232, 144);
             this.flowLayoutPanel1.MinimumSize = new System.Drawing.Size(232, 72);
@@ -390,7 +370,7 @@
             // flowLayoutPanel_Menu4
             // 
             this.flowLayoutPanel_Menu4.Controls.Add(this.panel_Menu4);
-            this.flowLayoutPanel_Menu4.Location = new System.Drawing.Point(232, 0);
+            this.flowLayoutPanel_Menu4.Location = new System.Drawing.Point(0, 448);
             this.flowLayoutPanel_Menu4.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel_Menu4.MaximumSize = new System.Drawing.Size(232, 144);
             this.flowLayoutPanel_Menu4.MinimumSize = new System.Drawing.Size(232, 72);
@@ -461,31 +441,6 @@
             this.tableLayoutPanel_Left.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
             this.tableLayoutPanel_Left.Size = new System.Drawing.Size(232, 712);
             this.tableLayoutPanel_Left.TabIndex = 2;
-            // 
-            // Button_Close
-            // 
-            this.Button_Close.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Button_Close.AutoSize = true;
-            this.Button_Close.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Close.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Button_Close.FlatAppearance.BorderSize = 0;
-            this.Button_Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.Button_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Close.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Button_Close.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(114)))), ((int)(((byte)(147)))));
-            this.Button_Close.Image = global::MES.Properties.Resources.exit;
-            this.Button_Close.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Close.Location = new System.Drawing.Point(0, 640);
-            this.Button_Close.Margin = new System.Windows.Forms.Padding(0);
-            this.Button_Close.Name = "Button_Close";
-            this.Button_Close.Size = new System.Drawing.Size(232, 72);
-            this.Button_Close.TabIndex = 6;
-            this.Button_Close.Text = "Exit           ";
-            this.Button_Close.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Button_Close.UseVisualStyleBackColor = false;
-            this.Button_Close.Click += new System.EventHandler(this.Button_Close_Click);
-            this.Button_Close.MouseEnter += new System.EventHandler(this.button_Menu_MouseEnter);
-            this.Button_Close.MouseLeave += new System.EventHandler(this.button_Menu_MouseLeave);
             // 
             // tableLayoutPanel_Full
             // 
@@ -600,34 +555,87 @@
             this.label_User_Position.TabIndex = 1;
             this.label_User_Position.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel_Menu_Operation_Rate_Analiyze
+            // panel_Operation_Rate_Analyze
             // 
-            this.panel_Menu_Operation_Rate_Analiyze.Controls.Add(this.Menu_Operation_Rate_Analiyze);
-            this.panel_Menu_Operation_Rate_Analiyze.Location = new System.Drawing.Point(0, 144);
-            this.panel_Menu_Operation_Rate_Analiyze.Margin = new System.Windows.Forms.Padding(0);
-            this.panel_Menu_Operation_Rate_Analiyze.Name = "panel_Menu_Operation_Rate_Analiyze";
-            this.panel_Menu_Operation_Rate_Analiyze.Size = new System.Drawing.Size(232, 72);
-            this.panel_Menu_Operation_Rate_Analiyze.TabIndex = 5;
+            this.panel_Operation_Rate_Analyze.Controls.Add(this.Operation_Analyze);
+            this.panel_Operation_Rate_Analyze.Location = new System.Drawing.Point(0, 120);
+            this.panel_Operation_Rate_Analyze.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_Operation_Rate_Analyze.Name = "panel_Operation_Rate_Analyze";
+            this.panel_Operation_Rate_Analyze.Size = new System.Drawing.Size(232, 48);
+            this.panel_Operation_Rate_Analyze.TabIndex = 5;
             // 
-            // Menu_Operation_Rate_Analiyze
+            // Button_Close
             // 
-            this.Menu_Operation_Rate_Analiyze.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(33)))), ((int)(((byte)(40)))));
-            this.Menu_Operation_Rate_Analiyze.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Menu_Operation_Rate_Analiyze.FlatAppearance.BorderSize = 0;
-            this.Menu_Operation_Rate_Analiyze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menu_Operation_Rate_Analiyze.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Menu_Operation_Rate_Analiyze.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(114)))), ((int)(((byte)(147)))));
-            this.Menu_Operation_Rate_Analiyze.Location = new System.Drawing.Point(0, 0);
-            this.Menu_Operation_Rate_Analiyze.Margin = new System.Windows.Forms.Padding(0);
-            this.Menu_Operation_Rate_Analiyze.MaximumSize = new System.Drawing.Size(232, 72);
-            this.Menu_Operation_Rate_Analiyze.Name = "Menu_Operation_Rate_Analiyze";
-            this.Menu_Operation_Rate_Analiyze.Size = new System.Drawing.Size(232, 72);
-            this.Menu_Operation_Rate_Analiyze.TabIndex = 3;
-            this.Menu_Operation_Rate_Analiyze.Text = "가동률 분석";
-            this.Menu_Operation_Rate_Analiyze.UseVisualStyleBackColor = false;
-            this.Menu_Operation_Rate_Analiyze.Click += new System.EventHandler(this.button_Menu_Click);
-            this.Menu_Operation_Rate_Analiyze.MouseEnter += new System.EventHandler(this.button_Menu_MouseEnter);
-            this.Menu_Operation_Rate_Analiyze.MouseLeave += new System.EventHandler(this.button_Menu_MouseLeave);
+            this.Button_Close.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Button_Close.AutoSize = true;
+            this.Button_Close.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Close.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Button_Close.FlatAppearance.BorderSize = 0;
+            this.Button_Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.Button_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Close.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Button_Close.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(114)))), ((int)(((byte)(147)))));
+            this.Button_Close.Image = global::MES.Properties.Resources.exit;
+            this.Button_Close.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Close.Location = new System.Drawing.Point(0, 640);
+            this.Button_Close.Margin = new System.Windows.Forms.Padding(0);
+            this.Button_Close.Name = "Button_Close";
+            this.Button_Close.Size = new System.Drawing.Size(232, 72);
+            this.Button_Close.TabIndex = 6;
+            this.Button_Close.Text = "Exit           ";
+            this.Button_Close.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Button_Close.UseVisualStyleBackColor = false;
+            this.Button_Close.Click += new System.EventHandler(this.Button_Close_Click);
+            this.Button_Close.MouseEnter += new System.EventHandler(this.button_Menu_MouseEnter);
+            this.Button_Close.MouseLeave += new System.EventHandler(this.button_Menu_MouseLeave);
+            // 
+            // Operation_Rate
+            // 
+            this.Operation_Rate.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Operation_Rate.AutoSize = true;
+            this.Operation_Rate.BackColor = System.Drawing.Color.Transparent;
+            this.Operation_Rate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Operation_Rate.FlatAppearance.BorderSize = 0;
+            this.Operation_Rate.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.Operation_Rate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.Operation_Rate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.Operation_Rate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Operation_Rate.Font = new System.Drawing.Font("맑은 고딕", 15.75F);
+            this.Operation_Rate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(114)))), ((int)(((byte)(147)))));
+            this.Operation_Rate.Location = new System.Drawing.Point(0, 0);
+            this.Operation_Rate.Margin = new System.Windows.Forms.Padding(0);
+            this.Operation_Rate.Name = "Operation_Rate";
+            this.Operation_Rate.Size = new System.Drawing.Size(232, 48);
+            this.Operation_Rate.TabIndex = 5;
+            this.Operation_Rate.Text = "가동률 현황";
+            this.Operation_Rate.UseVisualStyleBackColor = false;
+            this.Operation_Rate.Click += new System.EventHandler(this.button_Menu_Click);
+            this.Operation_Rate.MouseEnter += new System.EventHandler(this.button_Menu_MouseEnter);
+            this.Operation_Rate.MouseLeave += new System.EventHandler(this.button_Menu_MouseLeave);
+            // 
+            // Operation_Analyze
+            // 
+            this.Operation_Analyze.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Operation_Analyze.AutoSize = true;
+            this.Operation_Analyze.BackColor = System.Drawing.Color.Transparent;
+            this.Operation_Analyze.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Operation_Analyze.FlatAppearance.BorderSize = 0;
+            this.Operation_Analyze.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.Operation_Analyze.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.Operation_Analyze.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.Operation_Analyze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Operation_Analyze.Font = new System.Drawing.Font("맑은 고딕", 15.75F);
+            this.Operation_Analyze.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(114)))), ((int)(((byte)(147)))));
+            this.Operation_Analyze.Location = new System.Drawing.Point(0, 0);
+            this.Operation_Analyze.Margin = new System.Windows.Forms.Padding(0);
+            this.Operation_Analyze.Name = "Operation_Analyze";
+            this.Operation_Analyze.Size = new System.Drawing.Size(232, 48);
+            this.Operation_Analyze.TabIndex = 5;
+            this.Operation_Analyze.Text = "가동률 분석";
+            this.Operation_Analyze.UseVisualStyleBackColor = false;
+            this.Operation_Analyze.Click += new System.EventHandler(this.button_Menu_Click);
+            this.Operation_Analyze.MouseEnter += new System.EventHandler(this.button_Menu_MouseEnter);
+            this.Operation_Analyze.MouseLeave += new System.EventHandler(this.button_Menu_MouseLeave);
             // 
             // Main
             // 
@@ -652,10 +660,11 @@
             this.panel_Menu1.PerformLayout();
             this.panel_Menu1_1.ResumeLayout(false);
             this.panel_Menu1_2.ResumeLayout(false);
-            this.flowLayoutPanel_Menu2_Container.ResumeLayout(false);
-            this.panel_Menu2.ResumeLayout(false);
-            this.panel_Menu2.PerformLayout();
+            this.flowLayoutPanel_Operation_Container.ResumeLayout(false);
+            this.panel_Operation.ResumeLayout(false);
+            this.panel_Operation.PerformLayout();
             this.panel_Operation_Rate.ResumeLayout(false);
+            this.panel_Operation_Rate.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel_Menu3.ResumeLayout(false);
             this.panel_Menu3.PerformLayout();
@@ -670,7 +679,8 @@
             this.tableLayoutPanel_User.ResumeLayout(false);
             this.tableLayoutPanel_User_Right.ResumeLayout(false);
             this.tableLayoutPanel_User_Right.PerformLayout();
-            this.panel_Menu_Operation_Rate_Analiyze.ResumeLayout(false);
+            this.panel_Operation_Rate_Analyze.ResumeLayout(false);
+            this.panel_Operation_Rate_Analyze.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -678,7 +688,7 @@
         #endregion
         private System.Windows.Forms.Panel panel_User;
         private System.Windows.Forms.Panel panel_Menu3;
-        private System.Windows.Forms.Panel panel_Menu2;
+        private System.Windows.Forms.Panel panel_Operation;
         private System.Windows.Forms.Panel panel_Menu1;
         private System.Windows.Forms.Panel panel_Menu1_1;
         private System.Windows.Forms.Button Menu1_1;
@@ -686,17 +696,16 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_Left;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Left;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Full;
-        private System.Windows.Forms.Button Menu_Operation_Rate;
         private System.Windows.Forms.Panel panel_Operation_Rate;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_Menu1_Container;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_Menu2_Container;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_Operation_Container;
         private System.Windows.Forms.Panel panel_Menu1_2;
         private System.Windows.Forms.Button Menu1_2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_Menu4;
         private System.Windows.Forms.Panel panel_Menu4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.CheckBox Menu1;
-        private System.Windows.Forms.CheckBox Menu2;
+        private System.Windows.Forms.CheckBox Operation;
         private System.Windows.Forms.CheckBox Monitoring_Test;
         private System.Windows.Forms.CheckBox Employee;
         private System.Windows.Forms.CheckBox Button_Close;
@@ -712,7 +721,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_User_Right;
         private System.Windows.Forms.Label label_User_Name;
         private System.Windows.Forms.Label label_User_Position;
-        private System.Windows.Forms.Panel panel_Menu_Operation_Rate_Analiyze;
-        private System.Windows.Forms.Button Menu_Operation_Rate_Analiyze;
+        private System.Windows.Forms.Panel panel_Operation_Rate_Analyze;
+        private System.Windows.Forms.CheckBox Operation_Rate;
+        private System.Windows.Forms.CheckBox Operation_Analyze;
     }
 }

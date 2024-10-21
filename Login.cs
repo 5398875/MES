@@ -102,18 +102,18 @@ namespace MES
 
         private void button_Login_Inner_Click(object sender, EventArgs e)
         {
-            MySqlConnection connection = new MySqlConnection("Server = localhost;Database=team2;Uid=root;Pwd=1234;");
+            MySqlConnection connection = new MySqlConnection(User_info.User_connection);
             connection.Open();
 
             string login_query = "SELECT * FROM employee WHERE id = \'" + textBox_ID.Text + "\' ";
 
             MySqlCommand login_command = new MySqlCommand(login_query, connection);
             MySqlDataReader user_account = login_command.ExecuteReader();
-
-            while(user_account.Read())
+            Console.WriteLine(login_query);
+            while (user_account.Read())
             {
-
-                if(textBox_ID.Text == (string)user_account["id"] && textBox_PW.Text == (string)(user_account["pw"]))
+                
+                if (textBox_ID.Text == (string)user_account["id"] && textBox_PW.Text == (string)(user_account["pw"]))
                 {
                     User_info.User_name = (string)user_account["employee_name"];
                     User_info.User_position = (string)user_account["position"];

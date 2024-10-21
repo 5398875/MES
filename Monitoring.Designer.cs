@@ -132,7 +132,7 @@
             this.groupBox8.Controls.Add(this.X45);
             this.groupBox8.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox8.Location = new System.Drawing.Point(431, 240);
+            this.groupBox8.Location = new System.Drawing.Point(408, 280);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(91, 44);
             this.groupBox8.TabIndex = 54;
@@ -170,7 +170,7 @@
             this.groupBox7.Controls.Add(this.X44);
             this.groupBox7.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox7.Location = new System.Drawing.Point(617, 324);
+            this.groupBox7.Location = new System.Drawing.Point(584, 368);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(95, 44);
             this.groupBox7.TabIndex = 54;
@@ -260,7 +260,7 @@
             this.groupBox4.Controls.Add(this.X41);
             this.groupBox4.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox4.Location = new System.Drawing.Point(332, 8);
+            this.groupBox4.Location = new System.Drawing.Point(360, 8);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(96, 70);
             this.groupBox4.TabIndex = 51;
@@ -370,7 +370,7 @@
             this.groupBox2.Controls.Add(this.X16);
             this.groupBox2.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox2.Location = new System.Drawing.Point(120, 86);
+            this.groupBox2.Location = new System.Drawing.Point(192, 152);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(87, 45);
             this.groupBox2.TabIndex = 49;
@@ -409,8 +409,8 @@
             this.groupBox1.Controls.Add(this.X38);
             this.groupBox1.Controls.Add(this.X39);
             this.groupBox1.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox1.Location = new System.Drawing.Point(120, 149);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(272, 280);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(87, 68);
             this.groupBox1.TabIndex = 48;
@@ -588,7 +588,7 @@
             // 
             this.X37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.X37.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
-            this.X37.Location = new System.Drawing.Point(143, 324);
+            this.X37.Location = new System.Drawing.Point(176, 304);
             this.X37.Name = "X37";
             this.X37.Size = new System.Drawing.Size(35, 25);
             this.X37.TabIndex = 36;
@@ -599,7 +599,7 @@
             // 
             this.X36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.X36.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
-            this.X36.Location = new System.Drawing.Point(132, 240);
+            this.X36.Location = new System.Drawing.Point(192, 256);
             this.X36.Name = "X36";
             this.X36.Size = new System.Drawing.Size(35, 25);
             this.X36.TabIndex = 35;
@@ -610,7 +610,7 @@
             // 
             this.X35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.X35.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
-            this.X35.Location = new System.Drawing.Point(437, 382);
+            this.X35.Location = new System.Drawing.Point(672, 296);
             this.X35.Name = "X35";
             this.X35.Size = new System.Drawing.Size(35, 25);
             this.X35.TabIndex = 34;
@@ -621,7 +621,7 @@
             // 
             this.X34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.X34.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
-            this.X34.Location = new System.Drawing.Point(607, 460);
+            this.X34.Location = new System.Drawing.Point(736, 424);
             this.X34.Name = "X34";
             this.X34.Size = new System.Drawing.Size(35, 25);
             this.X34.TabIndex = 33;
@@ -632,7 +632,7 @@
             // 
             this.X33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.X33.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
-            this.X33.Location = new System.Drawing.Point(737, 521);
+            this.X33.Location = new System.Drawing.Point(840, 440);
             this.X33.Name = "X33";
             this.X33.Size = new System.Drawing.Size(35, 25);
             this.X33.TabIndex = 32;

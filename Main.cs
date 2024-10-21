@@ -138,6 +138,7 @@ namespace MES
                 case "Dashboard" : form_ToShow = new Dashboard(); break;
                 case "Operation_Rate": form_ToShow = new Operation_Rate(); break;
                 case "Operation_Analyze": form_ToShow = new Operation_Analyze(); break;
+                case "Warehouse": form_ToShow = new Warehouse(); break;
             }
             
             checkBox_Menu.ForeColor = Color.FromArgb(235, 22, 22);

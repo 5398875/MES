@@ -44,7 +44,9 @@
             this.panel_Monitor = new System.Windows.Forms.Panel();
             this.Monitor = new System.Windows.Forms.CheckBox();
             this.panel_Menu1_1 = new System.Windows.Forms.Panel();
+            this.Monitoring = new System.Windows.Forms.CheckBox();
             this.panel_Menu1_2 = new System.Windows.Forms.Panel();
+            this.Warehouse = new System.Windows.Forms.CheckBox();
             this.flowLayoutPanel_Operation_Container = new System.Windows.Forms.FlowLayoutPanel();
             this.panel_Operation = new System.Windows.Forms.Panel();
             this.Operation = new System.Windows.Forms.CheckBox();
@@ -65,8 +67,6 @@
             this.tableLayoutPanel_Right = new System.Windows.Forms.TableLayoutPanel();
             this.panel_Main = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.Monitoring = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.flowLayoutPanel_Left.SuspendLayout();
             this.panel_logo.SuspendLayout();
             this.panel_User.SuspendLayout();
@@ -293,14 +293,58 @@
             this.panel_Menu1_1.Size = new System.Drawing.Size(232, 48);
             this.panel_Menu1_1.TabIndex = 2;
             // 
+            // Monitoring
+            // 
+            this.Monitoring.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Monitoring.AutoSize = true;
+            this.Monitoring.BackColor = System.Drawing.Color.Transparent;
+            this.Monitoring.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Monitoring.FlatAppearance.BorderSize = 0;
+            this.Monitoring.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.Monitoring.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.Monitoring.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.Monitoring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Monitoring.Font = new System.Drawing.Font("맑은 고딕", 15.75F);
+            this.Monitoring.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(114)))), ((int)(((byte)(147)))));
+            this.Monitoring.Location = new System.Drawing.Point(0, 0);
+            this.Monitoring.Margin = new System.Windows.Forms.Padding(0);
+            this.Monitoring.Name = "Monitoring";
+            this.Monitoring.Size = new System.Drawing.Size(232, 48);
+            this.Monitoring.TabIndex = 6;
+            this.Monitoring.Text = "입/출력 모니터링";
+            this.Monitoring.UseVisualStyleBackColor = false;
+            this.Monitoring.Click += new System.EventHandler(this.button_Menu_Click);
+            // 
             // panel_Menu1_2
             // 
-            this.panel_Menu1_2.Controls.Add(this.checkBox2);
+            this.panel_Menu1_2.Controls.Add(this.Warehouse);
             this.panel_Menu1_2.Location = new System.Drawing.Point(0, 120);
             this.panel_Menu1_2.Margin = new System.Windows.Forms.Padding(0);
             this.panel_Menu1_2.Name = "panel_Menu1_2";
             this.panel_Menu1_2.Size = new System.Drawing.Size(232, 48);
             this.panel_Menu1_2.TabIndex = 3;
+            // 
+            // Warehouse
+            // 
+            this.Warehouse.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Warehouse.AutoSize = true;
+            this.Warehouse.BackColor = System.Drawing.Color.Transparent;
+            this.Warehouse.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Warehouse.FlatAppearance.BorderSize = 0;
+            this.Warehouse.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.Warehouse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.Warehouse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.Warehouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Warehouse.Font = new System.Drawing.Font("맑은 고딕", 15.75F);
+            this.Warehouse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(114)))), ((int)(((byte)(147)))));
+            this.Warehouse.Location = new System.Drawing.Point(0, 0);
+            this.Warehouse.Margin = new System.Windows.Forms.Padding(0);
+            this.Warehouse.Name = "Warehouse";
+            this.Warehouse.Size = new System.Drawing.Size(232, 48);
+            this.Warehouse.TabIndex = 6;
+            this.Warehouse.Text = "재고 현황";
+            this.Warehouse.UseVisualStyleBackColor = false;
+            this.Warehouse.Click += new System.EventHandler(this.button_Menu_Click);
             // 
             // flowLayoutPanel_Operation_Container
             // 
@@ -607,49 +651,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(910, 75);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
-            // Monitoring
-            // 
-            this.Monitoring.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Monitoring.AutoSize = true;
-            this.Monitoring.BackColor = System.Drawing.Color.Transparent;
-            this.Monitoring.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Monitoring.FlatAppearance.BorderSize = 0;
-            this.Monitoring.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.Monitoring.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.Monitoring.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.Monitoring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Monitoring.Font = new System.Drawing.Font("맑은 고딕", 15.75F);
-            this.Monitoring.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(114)))), ((int)(((byte)(147)))));
-            this.Monitoring.Location = new System.Drawing.Point(0, 0);
-            this.Monitoring.Margin = new System.Windows.Forms.Padding(0);
-            this.Monitoring.Name = "Monitoring";
-            this.Monitoring.Size = new System.Drawing.Size(232, 48);
-            this.Monitoring.TabIndex = 6;
-            this.Monitoring.Text = "입/출력 모니터링";
-            this.Monitoring.UseVisualStyleBackColor = false;
-            this.Monitoring.Click += new System.EventHandler(this.button_Menu_Click);
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox2.FlatAppearance.BorderSize = 0;
-            this.checkBox2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.checkBox2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.checkBox2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.checkBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox2.Font = new System.Drawing.Font("맑은 고딕", 15.75F);
-            this.checkBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(114)))), ((int)(((byte)(147)))));
-            this.checkBox2.Location = new System.Drawing.Point(0, 0);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(232, 48);
-            this.checkBox2.TabIndex = 6;
-            this.checkBox2.Text = "실시간 모니터링";
-            this.checkBox2.UseVisualStyleBackColor = false;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -738,6 +739,6 @@
         private System.Windows.Forms.CheckBox Operation_Rate;
         private System.Windows.Forms.CheckBox Operation_Analyze;
         private System.Windows.Forms.CheckBox Monitoring;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox Warehouse;
     }
 }

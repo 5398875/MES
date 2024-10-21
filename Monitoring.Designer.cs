@@ -1,6 +1,6 @@
 ﻿namespace MES
 {
-    partial class Monitoring_Test
+    partial class Monitoring
     {
         /// <summary>
         /// Required designer variable.
@@ -576,7 +576,7 @@
             this.panel1.Size = new System.Drawing.Size(800, 216);
             this.panel1.TabIndex = 48;
             // 
-            // Monitoring_Test
+            // Monitoring
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -584,7 +584,7 @@
             this.ClientSize = new System.Drawing.Size(1211, 688);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Monitoring_Test";
+            this.Name = "Monitoring";
             this.Text = "Monitoring_Test";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -134,7 +134,7 @@ namespace MES
             switch (checkBox_Menu.Name)
             {
                 case "Employee" : form_ToShow = new Employee(); break;
-                case "Monitoring_Test" : form_ToShow = new Monitoring_Test(); break;
+                case "Monitoring" : form_ToShow = new Monitoring(); break;
                 case "Dashboard" : form_ToShow = new Dashboard(); break;
                 case "Operation_Rate": form_ToShow = new Operation_Rate(); break;
                 case "Operation_Analyze": form_ToShow = new Operation_Analyze(); break;

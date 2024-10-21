@@ -12,9 +12,9 @@ using MySql.Data.MySqlClient;
 
 namespace MES
 {
-    public partial class Monitoring_Test : Form
+    public partial class Monitoring : Form
     {
-        public Monitoring_Test()
+        public Monitoring()
         {
             InitializeComponent();
         }
@@ -26,7 +26,7 @@ namespace MES
                 using (MySqlConnection connection = new MySqlConnection(User_info.User_connection))
                 {
                     connection.Open();
-                    string query = "select * from test order by event_time desc limit 1;";
+                    string query = "select * from plc order by event_time desc limit 1;";
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
                         using (MySqlDataReader reader = command.ExecuteReader())

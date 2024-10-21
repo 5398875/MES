@@ -28,11 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.checkBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.employee_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.position = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employee_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.level = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pw = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phonenumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastloginemployeecol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.image = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -59,38 +72,26 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.bt_attach = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.image = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastloginemployeecol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phonenumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pw = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.level = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employee_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.position = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employee_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.checkBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel_button = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bt_search_outer = new System.Windows.Forms.Panel();
-            this.bt_search = new System.Windows.Forms.Button();
-            this.panel_gap1 = new System.Windows.Forms.Panel();
-            this.bt_add_outer = new System.Windows.Forms.Panel();
-            this.bt_add = new System.Windows.Forms.Button();
-            this.panel_gap2 = new System.Windows.Forms.Panel();
-            this.bt_modify_outer = new System.Windows.Forms.Panel();
-            this.bt_modify = new System.Windows.Forms.Button();
-            this.panel_gap3 = new System.Windows.Forms.Panel();
+            this.panel_bottom = new System.Windows.Forms.Panel();
+            this.panel_button = new System.Windows.Forms.Panel();
             this.bt_delete_outer = new System.Windows.Forms.Panel();
             this.bt_delete = new System.Windows.Forms.Button();
-            this.panel_bottom = new System.Windows.Forms.Panel();
+            this.panel_gap3 = new System.Windows.Forms.Panel();
+            this.bt_modify_outer = new System.Windows.Forms.Panel();
+            this.bt_modify = new System.Windows.Forms.Button();
+            this.panel_gap2 = new System.Windows.Forms.Panel();
+            this.bt_add_outer = new System.Windows.Forms.Panel();
+            this.bt_add = new System.Windows.Forms.Button();
+            this.panel_gap1 = new System.Windows.Forms.Panel();
+            this.bt_search_outer = new System.Windows.Forms.Panel();
+            this.bt_search = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -107,13 +108,12 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel_button.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.bt_search_outer.SuspendLayout();
-            this.bt_add_outer.SuspendLayout();
-            this.bt_modify_outer.SuspendLayout();
+            this.panel_button.SuspendLayout();
             this.bt_delete_outer.SuspendLayout();
+            this.bt_modify_outer.SuspendLayout();
+            this.bt_add_outer.SuspendLayout();
+            this.bt_search_outer.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -134,6 +134,159 @@
             this.splitContainer1.Size = new System.Drawing.Size(1226, 653);
             this.splitContainer1.SplitterDistance = 814;
             this.splitContainer1.TabIndex = 21;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(61)))), ((int)(((byte)(81)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(48)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("굴림", 11.25F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(171)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.checkBoxColumn,
+            this.employee_id,
+            this.position,
+            this.employee_name,
+            this.level,
+            this.id,
+            this.pw,
+            this.phonenumber,
+            this.email,
+            this.address,
+            this.lastloginemployeecol,
+            this.image});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(48)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.GridColor = System.Drawing.Color.SlateGray;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 14.25F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(171)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DarkGray;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.DimGray;
+            this.dataGridView1.RowTemplate.Height = 40;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(814, 653);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // checkBoxColumn
+            // 
+            this.checkBoxColumn.HeaderText = "선택";
+            this.checkBoxColumn.Name = "checkBoxColumn";
+            this.checkBoxColumn.ReadOnly = true;
+            this.checkBoxColumn.Width = 50;
+            // 
+            // employee_id
+            // 
+            this.employee_id.DataPropertyName = "employee_id";
+            this.employee_id.HeaderText = "순서";
+            this.employee_id.Name = "employee_id";
+            this.employee_id.ReadOnly = true;
+            this.employee_id.Visible = false;
+            this.employee_id.Width = 55;
+            // 
+            // position
+            // 
+            this.position.DataPropertyName = "position";
+            this.position.HeaderText = "직책";
+            this.position.Name = "position";
+            this.position.ReadOnly = true;
+            // 
+            // employee_name
+            // 
+            this.employee_name.DataPropertyName = "employee_name";
+            this.employee_name.HeaderText = "이름";
+            this.employee_name.Name = "employee_name";
+            this.employee_name.ReadOnly = true;
+            // 
+            // level
+            // 
+            this.level.DataPropertyName = "level";
+            this.level.HeaderText = "권한";
+            this.level.Name = "level";
+            this.level.ReadOnly = true;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "아이디";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // pw
+            // 
+            this.pw.DataPropertyName = "pw";
+            this.pw.HeaderText = "비밀번호";
+            this.pw.Name = "pw";
+            this.pw.ReadOnly = true;
+            // 
+            // phonenumber
+            // 
+            this.phonenumber.DataPropertyName = "phonenumber";
+            this.phonenumber.HeaderText = "전화번호";
+            this.phonenumber.Name = "phonenumber";
+            this.phonenumber.ReadOnly = true;
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "email";
+            this.email.HeaderText = "이메일";
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            // 
+            // address
+            // 
+            this.address.DataPropertyName = "address";
+            this.address.FillWeight = 120F;
+            this.address.HeaderText = "주소";
+            this.address.Name = "address";
+            this.address.ReadOnly = true;
+            this.address.Width = 120;
+            // 
+            // lastloginemployeecol
+            // 
+            this.lastloginemployeecol.DataPropertyName = "lastloginemployeecol";
+            this.lastloginemployeecol.FillWeight = 120F;
+            this.lastloginemployeecol.HeaderText = "로그인시간";
+            this.lastloginemployeecol.Name = "lastloginemployeecol";
+            this.lastloginemployeecol.ReadOnly = true;
+            this.lastloginemployeecol.Width = 120;
+            // 
+            // image
+            // 
+            this.image.DataPropertyName = "image";
+            this.image.HeaderText = "이미지";
+            this.image.Name = "image";
+            this.image.ReadOnly = true;
+            this.image.Visible = false;
             // 
             // splitContainer2
             // 
@@ -546,156 +699,23 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // panel3
+            // panel2
             // 
-            this.panel3.AutoScroll = true;
-            this.panel3.AutoSize = true;
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 653);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(408, 0);
-            this.panel3.TabIndex = 28;
+            this.panel2.Controls.Add(this.panel_bottom);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 76);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(408, 75);
+            this.panel2.TabIndex = 1;
             // 
-            // image
+            // panel_bottom
             // 
-            this.image.DataPropertyName = "image";
-            this.image.HeaderText = "이미지";
-            this.image.Name = "image";
-            this.image.Visible = false;
-            // 
-            // lastloginemployeecol
-            // 
-            this.lastloginemployeecol.DataPropertyName = "lastloginemployeecol";
-            this.lastloginemployeecol.FillWeight = 120F;
-            this.lastloginemployeecol.HeaderText = "로그인시간";
-            this.lastloginemployeecol.Name = "lastloginemployeecol";
-            this.lastloginemployeecol.Width = 120;
-            // 
-            // address
-            // 
-            this.address.DataPropertyName = "address";
-            this.address.FillWeight = 120F;
-            this.address.HeaderText = "주소";
-            this.address.Name = "address";
-            this.address.Width = 120;
-            // 
-            // email
-            // 
-            this.email.DataPropertyName = "email";
-            this.email.HeaderText = "이메일";
-            this.email.Name = "email";
-            // 
-            // phonenumber
-            // 
-            this.phonenumber.DataPropertyName = "phonenumber";
-            this.phonenumber.HeaderText = "전화번호";
-            this.phonenumber.Name = "phonenumber";
-            // 
-            // pw
-            // 
-            this.pw.DataPropertyName = "pw";
-            this.pw.HeaderText = "비밀번호";
-            this.pw.Name = "pw";
-            // 
-            // id
-            // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "아이디";
-            this.id.Name = "id";
-            // 
-            // level
-            // 
-            this.level.DataPropertyName = "level";
-            this.level.HeaderText = "권한";
-            this.level.Name = "level";
-            // 
-            // employee_name
-            // 
-            this.employee_name.DataPropertyName = "employee_name";
-            this.employee_name.HeaderText = "이름";
-            this.employee_name.Name = "employee_name";
-            // 
-            // position
-            // 
-            this.position.DataPropertyName = "position";
-            this.position.HeaderText = "직책";
-            this.position.Name = "position";
-            // 
-            // employee_id
-            // 
-            this.employee_id.DataPropertyName = "employee_id";
-            this.employee_id.HeaderText = "순서";
-            this.employee_id.Name = "employee_id";
-            this.employee_id.Visible = false;
-            this.employee_id.Width = 55;
-            // 
-            // checkBoxColumn
-            // 
-            this.checkBoxColumn.HeaderText = "선택";
-            this.checkBoxColumn.Name = "checkBoxColumn";
-            this.checkBoxColumn.Width = 50;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(61)))), ((int)(((byte)(81)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(48)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("굴림", 11.25F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(171)))), ((int)(((byte)(176)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.checkBoxColumn,
-            this.employee_id,
-            this.position,
-            this.employee_name,
-            this.level,
-            this.id,
-            this.pw,
-            this.phonenumber,
-            this.email,
-            this.address,
-            this.lastloginemployeecol,
-            this.image});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(48)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.Color.SlateGray;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(59)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("굴림", 14.25F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(171)))), ((int)(((byte)(176)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.DarkGray;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.DimGray;
-            this.dataGridView1.RowTemplate.Height = 40;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(814, 653);
-            this.dataGridView1.TabIndex = 1;
+            this.panel_bottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.panel_bottom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_bottom.Location = new System.Drawing.Point(0, 0);
+            this.panel_bottom.Name = "panel_bottom";
+            this.panel_bottom.Size = new System.Drawing.Size(408, 75);
+            this.panel_bottom.TabIndex = 48;
             // 
             // panel_button
             // 
@@ -712,14 +732,104 @@
             this.panel_button.Size = new System.Drawing.Size(408, 76);
             this.panel_button.TabIndex = 0;
             // 
-            // panel2
+            // bt_delete_outer
             // 
-            this.panel2.Controls.Add(this.panel_bottom);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 76);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(408, 75);
-            this.panel2.TabIndex = 1;
+            this.bt_delete_outer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.bt_delete_outer.Controls.Add(this.bt_delete);
+            this.bt_delete_outer.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bt_delete_outer.Location = new System.Drawing.Point(309, 0);
+            this.bt_delete_outer.Name = "bt_delete_outer";
+            this.bt_delete_outer.Size = new System.Drawing.Size(102, 76);
+            this.bt_delete_outer.TabIndex = 29;
+            // 
+            // bt_delete
+            // 
+            this.bt_delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(59)))));
+            this.bt_delete.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.bt_delete.FlatAppearance.BorderSize = 0;
+            this.bt_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.bt_delete.Location = new System.Drawing.Point(0, 12);
+            this.bt_delete.Name = "bt_delete";
+            this.bt_delete.Size = new System.Drawing.Size(102, 55);
+            this.bt_delete.TabIndex = 11;
+            this.bt_delete.Text = "DELETE";
+            this.bt_delete.UseVisualStyleBackColor = false;
+            this.bt_delete.Click += new System.EventHandler(this.bt_delete_Click);
+            // 
+            // panel_gap3
+            // 
+            this.panel_gap3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_gap3.Location = new System.Drawing.Point(304, 0);
+            this.panel_gap3.Name = "panel_gap3";
+            this.panel_gap3.Size = new System.Drawing.Size(5, 76);
+            this.panel_gap3.TabIndex = 28;
+            // 
+            // bt_modify_outer
+            // 
+            this.bt_modify_outer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.bt_modify_outer.Controls.Add(this.bt_modify);
+            this.bt_modify_outer.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bt_modify_outer.Location = new System.Drawing.Point(206, 0);
+            this.bt_modify_outer.Name = "bt_modify_outer";
+            this.bt_modify_outer.Size = new System.Drawing.Size(98, 76);
+            this.bt_modify_outer.TabIndex = 27;
+            // 
+            // bt_modify
+            // 
+            this.bt_modify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(59)))));
+            this.bt_modify.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.bt_modify.FlatAppearance.BorderSize = 0;
+            this.bt_modify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_modify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.bt_modify.Location = new System.Drawing.Point(0, 12);
+            this.bt_modify.Name = "bt_modify";
+            this.bt_modify.Size = new System.Drawing.Size(98, 55);
+            this.bt_modify.TabIndex = 11;
+            this.bt_modify.Text = "MODIFY";
+            this.bt_modify.UseVisualStyleBackColor = false;
+            this.bt_modify.Click += new System.EventHandler(this.bt_modify_Click);
+            // 
+            // panel_gap2
+            // 
+            this.panel_gap2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_gap2.Location = new System.Drawing.Point(201, 0);
+            this.panel_gap2.Name = "panel_gap2";
+            this.panel_gap2.Size = new System.Drawing.Size(5, 76);
+            this.panel_gap2.TabIndex = 26;
+            // 
+            // bt_add_outer
+            // 
+            this.bt_add_outer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.bt_add_outer.Controls.Add(this.bt_add);
+            this.bt_add_outer.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bt_add_outer.Location = new System.Drawing.Point(103, 0);
+            this.bt_add_outer.Name = "bt_add_outer";
+            this.bt_add_outer.Size = new System.Drawing.Size(98, 76);
+            this.bt_add_outer.TabIndex = 25;
+            // 
+            // bt_add
+            // 
+            this.bt_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(59)))));
+            this.bt_add.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.bt_add.FlatAppearance.BorderSize = 0;
+            this.bt_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.bt_add.Location = new System.Drawing.Point(0, 12);
+            this.bt_add.Name = "bt_add";
+            this.bt_add.Size = new System.Drawing.Size(98, 55);
+            this.bt_add.TabIndex = 11;
+            this.bt_add.Text = "ADD";
+            this.bt_add.UseVisualStyleBackColor = false;
+            this.bt_add.Click += new System.EventHandler(this.bt_add_Click);
+            // 
+            // panel_gap1
+            // 
+            this.panel_gap1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_gap1.Location = new System.Drawing.Point(98, 0);
+            this.panel_gap1.Name = "panel_gap1";
+            this.panel_gap1.Size = new System.Drawing.Size(5, 76);
+            this.panel_gap1.TabIndex = 24;
             // 
             // bt_search_outer
             // 
@@ -749,113 +859,16 @@
             this.bt_search.UseVisualStyleBackColor = false;
             this.bt_search.Click += new System.EventHandler(this.bt_search_Click_1);
             // 
-            // panel_gap1
+            // panel3
             // 
-            this.panel_gap1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_gap1.Location = new System.Drawing.Point(98, 0);
-            this.panel_gap1.Name = "panel_gap1";
-            this.panel_gap1.Size = new System.Drawing.Size(5, 76);
-            this.panel_gap1.TabIndex = 24;
-            // 
-            // bt_add_outer
-            // 
-            this.bt_add_outer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
-            this.bt_add_outer.Controls.Add(this.bt_add);
-            this.bt_add_outer.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bt_add_outer.Location = new System.Drawing.Point(103, 0);
-            this.bt_add_outer.Name = "bt_add_outer";
-            this.bt_add_outer.Size = new System.Drawing.Size(98, 76);
-            this.bt_add_outer.TabIndex = 25;
-            // 
-            // bt_add
-            // 
-            this.bt_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(59)))));
-            this.bt_add.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
-            this.bt_add.FlatAppearance.BorderSize = 0;
-            this.bt_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
-            this.bt_add.Location = new System.Drawing.Point(0, 12);
-            this.bt_add.Name = "bt_add";
-            this.bt_add.Size = new System.Drawing.Size(98, 55);
-            this.bt_add.TabIndex = 11;
-            this.bt_add.Text = "ADD";
-            this.bt_add.UseVisualStyleBackColor = false;
-            this.bt_add.Click += new System.EventHandler(this.bt_add_Click);
-            // 
-            // panel_gap2
-            // 
-            this.panel_gap2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_gap2.Location = new System.Drawing.Point(201, 0);
-            this.panel_gap2.Name = "panel_gap2";
-            this.panel_gap2.Size = new System.Drawing.Size(5, 76);
-            this.panel_gap2.TabIndex = 26;
-            // 
-            // bt_modify_outer
-            // 
-            this.bt_modify_outer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
-            this.bt_modify_outer.Controls.Add(this.bt_modify);
-            this.bt_modify_outer.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bt_modify_outer.Location = new System.Drawing.Point(206, 0);
-            this.bt_modify_outer.Name = "bt_modify_outer";
-            this.bt_modify_outer.Size = new System.Drawing.Size(98, 76);
-            this.bt_modify_outer.TabIndex = 27;
-            // 
-            // bt_modify
-            // 
-            this.bt_modify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(59)))));
-            this.bt_modify.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
-            this.bt_modify.FlatAppearance.BorderSize = 0;
-            this.bt_modify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_modify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
-            this.bt_modify.Location = new System.Drawing.Point(0, 12);
-            this.bt_modify.Name = "bt_modify";
-            this.bt_modify.Size = new System.Drawing.Size(98, 55);
-            this.bt_modify.TabIndex = 11;
-            this.bt_modify.Text = "MODIFY";
-            this.bt_modify.UseVisualStyleBackColor = false;
-            this.bt_modify.Click += new System.EventHandler(this.bt_modify_Click);
-            // 
-            // panel_gap3
-            // 
-            this.panel_gap3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_gap3.Location = new System.Drawing.Point(304, 0);
-            this.panel_gap3.Name = "panel_gap3";
-            this.panel_gap3.Size = new System.Drawing.Size(5, 76);
-            this.panel_gap3.TabIndex = 28;
-            // 
-            // bt_delete_outer
-            // 
-            this.bt_delete_outer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
-            this.bt_delete_outer.Controls.Add(this.bt_delete);
-            this.bt_delete_outer.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bt_delete_outer.Location = new System.Drawing.Point(309, 0);
-            this.bt_delete_outer.Name = "bt_delete_outer";
-            this.bt_delete_outer.Size = new System.Drawing.Size(102, 76);
-            this.bt_delete_outer.TabIndex = 29;
-            // 
-            // bt_delete
-            // 
-            this.bt_delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(59)))));
-            this.bt_delete.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
-            this.bt_delete.FlatAppearance.BorderSize = 0;
-            this.bt_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
-            this.bt_delete.Location = new System.Drawing.Point(0, 12);
-            this.bt_delete.Name = "bt_delete";
-            this.bt_delete.Size = new System.Drawing.Size(102, 55);
-            this.bt_delete.TabIndex = 11;
-            this.bt_delete.Text = "DELETE";
-            this.bt_delete.UseVisualStyleBackColor = false;
-            this.bt_delete.Click += new System.EventHandler(this.bt_delete_Click);
-            // 
-            // panel_bottom
-            // 
-            this.panel_bottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
-            this.panel_bottom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_bottom.Location = new System.Drawing.Point(0, 0);
-            this.panel_bottom.Name = "panel_bottom";
-            this.panel_bottom.Size = new System.Drawing.Size(408, 75);
-            this.panel_bottom.TabIndex = 48;
+            this.panel3.AutoScroll = true;
+            this.panel3.AutoSize = true;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 653);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(408, 0);
+            this.panel3.TabIndex = 28;
             // 
             // Employee
             // 
@@ -873,6 +886,7 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
@@ -890,13 +904,12 @@
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel_button.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.bt_search_outer.ResumeLayout(false);
-            this.bt_add_outer.ResumeLayout(false);
-            this.bt_modify_outer.ResumeLayout(false);
+            this.panel_button.ResumeLayout(false);
             this.bt_delete_outer.ResumeLayout(false);
+            this.bt_modify_outer.ResumeLayout(false);
+            this.bt_add_outer.ResumeLayout(false);
+            this.bt_search_outer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

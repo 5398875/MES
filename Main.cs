@@ -83,13 +83,16 @@ namespace MES
         private void button_Menu_MouseEnter(object sender, EventArgs e)
         {
             CheckBox entered_Button = sender as CheckBox;
-            entered_Button.ForeColor = Color.FromArgb(235, 22, 22);
+            if (entered_Button != null)
+            {
+                entered_Button.ForeColor = Color.FromArgb(235, 22, 22);
+            }
         }
 
         private void button_Menu_MouseLeave(object sender, EventArgs e)
         {
             CheckBox leaved_Button = sender as CheckBox;
-            if(!leaved_Button.Checked)
+            if(leaved_Button != null)
             {
                 leaved_Button.ForeColor = Color.FromArgb(108, 114, 147);
             }

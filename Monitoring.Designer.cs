@@ -38,21 +38,21 @@
             this.X13 = new System.Windows.Forms.Button();
             this.X44 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.X24 = new System.Windows.Forms.Button();
             this.X25 = new System.Windows.Forms.Button();
-            this.X26 = new System.Windows.Forms.Button();
             this.X42 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.X22 = new System.Windows.Forms.Button();
             this.X23 = new System.Windows.Forms.Button();
-            this.X24 = new System.Windows.Forms.Button();
             this.X40 = new System.Windows.Forms.Button();
             this.X41 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.X20 = new System.Windows.Forms.Button();
             this.X21 = new System.Windows.Forms.Button();
-            this.X22 = new System.Windows.Forms.Button();
             this.X43 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.X15 = new System.Windows.Forms.Button();
-            this.X17 = new System.Windows.Forms.Button();
+            this.X16 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.X11 = new System.Windows.Forms.Button();
             this.X12 = new System.Windows.Forms.Button();
@@ -204,8 +204,8 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox5.Controls.Add(this.X24);
             this.groupBox5.Controls.Add(this.X25);
-            this.groupBox5.Controls.Add(this.X26);
             this.groupBox5.Controls.Add(this.X42);
             this.groupBox5.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -216,29 +216,29 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "적재전후";
             // 
+            // X24
+            // 
+            this.X24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.X24.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
+            this.X24.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.X24.Location = new System.Drawing.Point(6, 15);
+            this.X24.Name = "X24";
+            this.X24.Size = new System.Drawing.Size(35, 25);
+            this.X24.TabIndex = 24;
+            this.X24.Text = "X18";
+            this.X24.UseVisualStyleBackColor = false;
+            // 
             // X25
             // 
             this.X25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.X25.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
             this.X25.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.X25.Location = new System.Drawing.Point(6, 15);
+            this.X25.Location = new System.Drawing.Point(48, 15);
             this.X25.Name = "X25";
             this.X25.Size = new System.Drawing.Size(35, 25);
-            this.X25.TabIndex = 24;
-            this.X25.Text = "X18";
+            this.X25.TabIndex = 25;
+            this.X25.Text = "X19";
             this.X25.UseVisualStyleBackColor = false;
-            // 
-            // X26
-            // 
-            this.X26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.X26.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
-            this.X26.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.X26.Location = new System.Drawing.Point(48, 15);
-            this.X26.Name = "X26";
-            this.X26.Size = new System.Drawing.Size(35, 25);
-            this.X26.TabIndex = 25;
-            this.X26.Text = "X19";
-            this.X26.UseVisualStyleBackColor = false;
             // 
             // X42
             // 
@@ -254,8 +254,8 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.X22);
             this.groupBox4.Controls.Add(this.X23);
-            this.groupBox4.Controls.Add(this.X24);
             this.groupBox4.Controls.Add(this.X40);
             this.groupBox4.Controls.Add(this.X41);
             this.groupBox4.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -267,29 +267,29 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "모터정역";
             // 
+            // X22
+            // 
+            this.X22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.X22.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
+            this.X22.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.X22.Location = new System.Drawing.Point(8, 15);
+            this.X22.Name = "X22";
+            this.X22.Size = new System.Drawing.Size(35, 25);
+            this.X22.TabIndex = 22;
+            this.X22.Text = "X16";
+            this.X22.UseVisualStyleBackColor = false;
+            // 
             // X23
             // 
             this.X23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.X23.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
             this.X23.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.X23.Location = new System.Drawing.Point(8, 15);
+            this.X23.Location = new System.Drawing.Point(50, 15);
             this.X23.Name = "X23";
             this.X23.Size = new System.Drawing.Size(35, 25);
-            this.X23.TabIndex = 22;
-            this.X23.Text = "X16";
+            this.X23.TabIndex = 23;
+            this.X23.Text = "X17";
             this.X23.UseVisualStyleBackColor = false;
-            // 
-            // X24
-            // 
-            this.X24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.X24.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
-            this.X24.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.X24.Location = new System.Drawing.Point(50, 15);
-            this.X24.Name = "X24";
-            this.X24.Size = new System.Drawing.Size(35, 25);
-            this.X24.TabIndex = 23;
-            this.X24.Text = "X17";
-            this.X24.UseVisualStyleBackColor = false;
             // 
             // X40
             // 
@@ -316,8 +316,8 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.X20);
             this.groupBox3.Controls.Add(this.X21);
-            this.groupBox3.Controls.Add(this.X22);
             this.groupBox3.Controls.Add(this.X43);
             this.groupBox3.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -328,29 +328,29 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "글리퍼";
             // 
+            // X20
+            // 
+            this.X20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.X20.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
+            this.X20.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.X20.Location = new System.Drawing.Point(6, 15);
+            this.X20.Name = "X20";
+            this.X20.Size = new System.Drawing.Size(35, 25);
+            this.X20.TabIndex = 20;
+            this.X20.Text = "X14";
+            this.X20.UseVisualStyleBackColor = false;
+            // 
             // X21
             // 
             this.X21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.X21.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
             this.X21.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.X21.Location = new System.Drawing.Point(6, 15);
+            this.X21.Location = new System.Drawing.Point(47, 15);
             this.X21.Name = "X21";
             this.X21.Size = new System.Drawing.Size(35, 25);
-            this.X21.TabIndex = 20;
-            this.X21.Text = "X14";
+            this.X21.TabIndex = 21;
+            this.X21.Text = "X15";
             this.X21.UseVisualStyleBackColor = false;
-            // 
-            // X22
-            // 
-            this.X22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.X22.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
-            this.X22.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.X22.Location = new System.Drawing.Point(47, 15);
-            this.X22.Name = "X22";
-            this.X22.Size = new System.Drawing.Size(35, 25);
-            this.X22.TabIndex = 21;
-            this.X22.Text = "X15";
-            this.X22.UseVisualStyleBackColor = false;
             // 
             // X43
             // 
@@ -367,7 +367,7 @@
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.X15);
-            this.groupBox2.Controls.Add(this.X17);
+            this.groupBox2.Controls.Add(this.X16);
             this.groupBox2.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBox2.Location = new System.Drawing.Point(120, 86);
@@ -389,17 +389,17 @@
             this.X15.Text = "X0F";
             this.X15.UseVisualStyleBackColor = false;
             // 
-            // X17
+            // X16
             // 
-            this.X17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.X17.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
-            this.X17.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.X17.Location = new System.Drawing.Point(46, 16);
-            this.X17.Name = "X17";
-            this.X17.Size = new System.Drawing.Size(35, 25);
-            this.X17.TabIndex = 18;
-            this.X17.Text = "X10";
-            this.X17.UseVisualStyleBackColor = false;
+            this.X16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.X16.Font = new System.Drawing.Font("굴림", 7F, System.Drawing.FontStyle.Bold);
+            this.X16.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.X16.Location = new System.Drawing.Point(46, 16);
+            this.X16.Name = "X16";
+            this.X16.Size = new System.Drawing.Size(35, 25);
+            this.X16.TabIndex = 18;
+            this.X16.Text = "X10";
+            this.X16.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
@@ -679,12 +679,12 @@
         private System.Windows.Forms.Button X12;
         private System.Windows.Forms.Button X14;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button X26;
         private System.Windows.Forms.Button X25;
         private System.Windows.Forms.Button X24;
         private System.Windows.Forms.Button X23;
         private System.Windows.Forms.Button X22;
         private System.Windows.Forms.Button X21;
+        private System.Windows.Forms.Button X20;
         private System.Windows.Forms.Button X45;
         private System.Windows.Forms.Button X44;
         private System.Windows.Forms.Button X43;
@@ -704,7 +704,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button X15;
-        private System.Windows.Forms.Button X17;
+        private System.Windows.Forms.Button X16;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.GroupBox groupBox7;

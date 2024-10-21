@@ -52,13 +52,13 @@ namespace MES
             SaveControlOriginalPosition(X13);
             SaveControlOriginalPosition(X14);
             SaveControlOriginalPosition(X15);
-            SaveControlOriginalPosition(X17);
+            SaveControlOriginalPosition(X16);
+            SaveControlOriginalPosition(X20);
             SaveControlOriginalPosition(X21);
             SaveControlOriginalPosition(X22);
             SaveControlOriginalPosition(X23);
             SaveControlOriginalPosition(X24);
             SaveControlOriginalPosition(X25);
-            SaveControlOriginalPosition(X26);
             SaveControlOriginalPosition(X33);
             SaveControlOriginalPosition(X34);
             SaveControlOriginalPosition(X35);

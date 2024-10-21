@@ -23,7 +23,7 @@ namespace MES
         {
             try
             {
-                using (MySqlConnection connection = new MySqlConnection("Server=localhost; Database=team2; Uid=root; Pwd=1234;"))
+                using (MySqlConnection connection = new MySqlConnection(User_info.User_connection))
                 {
                     connection.Open();
                     string query = "select * from test order by event_time desc limit 1;";

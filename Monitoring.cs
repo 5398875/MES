@@ -151,11 +151,13 @@ namespace MES
                                     {
                                         if (reader.GetBoolean(i+1))
                                         {
-                                            button.BackColor = Color.Red;
+                                            button.BackColor = Color.Red; 
+                                            button.ForeColor = Color.White;
                                         }
                                         else
                                         {
                                             button.BackColor = Color.FromArgb(255, 192, 192);
+                                            button.ForeColor = Color.Black;
                                         }
                                     }
                                 }
@@ -167,10 +169,12 @@ namespace MES
                                         if (reader.GetBoolean(i + 1))
                                         {
                                             button.BackColor = Color.Blue;
+                                            button.ForeColor = Color.White;
                                         }
                                         else
                                         {
                                             button.BackColor = Color.FromArgb(192, 255, 192);
+                                            button.ForeColor = Color.Black;
                                         }
                                     }
                                 }
@@ -182,10 +186,12 @@ namespace MES
                                         if (reader.GetBoolean(i + 1))
                                         {
                                             button.BackColor = Color.Green;
+                                            button.ForeColor = Color.White;
                                         }
                                         else
                                         {
                                             button.BackColor = Color.FromArgb(192, 192, 255);
+                                            button.ForeColor = Color.Black;
                                         }
                                     }
                                 }

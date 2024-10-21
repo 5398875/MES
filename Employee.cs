@@ -37,7 +37,7 @@ namespace MES
 
             try
             {
-                using (MySqlConnection connection = new MySqlConnection("Server=localhost; Database=team2; Uid=root; Pwd=1234;"))
+                using (MySqlConnection connection = new MySqlConnection(User_info.User_connection))
                 {
                     connection.Open();
                     string query = "select * from employee order by employee_id asc;";
@@ -215,7 +215,7 @@ namespace MES
             int employeeId = Convert.ToInt32(selectedRow.Cells["employee_id"].Value);
 
             // MySQL 데이터베이스에서 데이터를 검색합니다.
-            using (MySqlConnection connection = new MySqlConnection("Server=localhost; Database=team2; Uid=root; Pwd=1234;"))
+            using (MySqlConnection connection = new MySqlConnection(User_info.User_connection))
             {
                 connection.Open();
                 string query = $"SELECT * FROM employee WHERE employee_id = {employeeId}";
@@ -299,7 +299,7 @@ namespace MES
 
             int newEmployeeId = 0;
 
-            using (MySqlConnection connection = new MySqlConnection("Server=localhost; Database=team2; Uid=root; Pwd=1234;"))
+            using (MySqlConnection connection = new MySqlConnection(User_info.User_connection))
             {
                 connection.Open();
 
@@ -350,7 +350,7 @@ namespace MES
 
             try
             {
-                using (MySqlConnection connection = new MySqlConnection("Server=localhost; Database=team2; Uid=root; Pwd=1234;"))
+                using (MySqlConnection connection = new MySqlConnection(User_info.User_connection))
                 {
                     connection.Open();
                     string query = "select * from employee order by employee_id asc;";
@@ -458,7 +458,7 @@ namespace MES
             }
 
             // MySQL 데이터베이스에서 데이터를 수정합니다.
-            using (MySqlConnection connection = new MySqlConnection("Server=localhost; Database=team2; Uid=root; Pwd=1234;"))
+            using (MySqlConnection connection = new MySqlConnection(User_info.User_connection))
             {
                 connection.Open();
                 string updateQuery = "UPDATE employee SET position = @position, employee_name = @employee_name, level = @level, id = @id, pw = @pw, phonenumber = @phonenumber, email = @email, address = @address, image = @image WHERE employee_id = @employee_id";
@@ -492,7 +492,7 @@ namespace MES
 
             try
             {
-                using (MySqlConnection connection = new MySqlConnection("Server=localhost; Database=team2; Uid=root; Pwd=1234;"))
+                using (MySqlConnection connection = new MySqlConnection(User_info.User_connection))
                 {
                     connection.Open();
                     string query = "select * from employee order by employee_id asc;";
@@ -549,7 +549,7 @@ namespace MES
             }
 
             // 데이터베이스에서 삭제
-            using (MySqlConnection connection = new MySqlConnection("Server=localhost; Database=team2; Uid=root; Pwd=1234;"))
+            using (MySqlConnection connection = new MySqlConnection(User_info.User_connection))
             {
                 connection.Open();
                 using (MySqlCommand command = new MySqlCommand())
@@ -581,7 +581,7 @@ namespace MES
 
             try
             {
-                using (MySqlConnection connection = new MySqlConnection("Server=localhost; Database=team2; Uid=root; Pwd=1234;"))
+                using (MySqlConnection connection = new MySqlConnection(User_info.User_connection))
                 {
                     connection.Open();
                     string query = "select * from employee order by employee_id asc;";

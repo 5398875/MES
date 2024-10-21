@@ -118,11 +118,11 @@
     <Compile Include="Operation_Analyze.Designer.cs">
       <DependentUpon>Operation_Analyze.cs</DependentUpon>
     </Compile>
-    <Compile Include="Monitoring_Test.cs">
+    <Compile Include="Monitoring.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Monitoring_Test.Designer.cs">
-      <DependentUpon>Monitoring_Test.cs</DependentUpon>
+    <Compile Include="Monitoring.Designer.cs">
+      <DependentUpon>Monitoring.cs</DependentUpon>
     </Compile>
     <Compile Include="Operation_Rate.cs">
       <SubType>Form</SubType>
@@ -163,8 +163,8 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Monitoring_Test.resx">
-      <DependentUpon>Monitoring_Test.cs</DependentUpon>
+    <EmbeddedResource Include="Monitoring.resx">
+      <DependentUpon>Monitoring.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Operation_Rate.resx">
       <DependentUpon>Operation_Rate.cs</DependentUpon>

@@ -352,6 +352,11 @@ namespace MES
         {
             int red_num_before = Convert.ToInt32(lb_red.Text);
             red_num = ++red_num_before;
+            if(red_num>8)
+            {
+                red_num = 8;
+                MessageBox.Show("RED 창고가 가득 찼습니다.");
+            }
             blue_num = Convert.ToInt32(lb_blue.Text);
             ProcessWarehouseDataUpdate();
         }
@@ -360,6 +365,11 @@ namespace MES
         {
             int blue_num_before = Convert.ToInt32(lb_blue.Text);
             blue_num = ++blue_num_before;
+            if (blue_num > 8)
+            {
+                blue_num = 8;
+                MessageBox.Show("blue 창고가 가득 찼습니다.");
+            }
             red_num = Convert.ToInt32(lb_red.Text);
             ProcessWarehouseDataUpdate();
         }

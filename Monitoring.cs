@@ -155,7 +155,7 @@ namespace MES
                                         }
                                         else
                                         {
-                                            button.BackColor = Color.White;
+                                            button.BackColor = Color.FromArgb(255, 192, 192);
                                         }
                                     }
                                 }
@@ -170,7 +170,7 @@ namespace MES
                                         }
                                         else
                                         {
-                                            button.BackColor = Color.White;
+                                            button.BackColor = Color.FromArgb(192, 255, 192);
                                         }
                                     }
                                 }
@@ -185,7 +185,7 @@ namespace MES
                                         }
                                         else
                                         {
-                                            button.BackColor = Color.White;
+                                            button.BackColor = Color.FromArgb(192, 192, 255);
                                         }
                                     }
                                 }

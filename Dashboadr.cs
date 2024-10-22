@@ -10,6 +10,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 
 namespace MES
@@ -33,10 +34,18 @@ MySQL 데이터베이스 접근과 같은 작업은 UI 스레드와 분리된 �
         
         private int panelSize;
 
+        private int red_num;
+        private int blue_num;
+
+        private float basePanelWidth;
+        private float baseFontSize;
+
         public Dashboard()
         {
             InitializeComponent();
             panelSize = pl_con_p.Width;
+            basePanelWidth = pl_con_p.Width;
+            baseFontSize = lb_p_red.Font.Size;
 
             // Timer 설정          
             dbTimer = new System.Threading.Timer(new TimerCallback(DbTimer_Tick), null, 0, 2500);
@@ -48,7 +57,12 @@ MySQL 데이터베이스 접근과 같은 작업은 UI 스레드와 분리된 �
         private void Panel_Resize(object sender, EventArgs e)
         {
             panelSize = pl_con_p.Width; // 패널 크기 업데이트
-            // float newFontSize = panelSize * 0.1f; // 적절한 비율로 폰트 크기 설정 
+
+            float scaleFactor = pl_con_p.Width / basePanelWidth; // 크기 변화 비율 계산
+            float newFontSize = baseFontSize * scaleFactor; // 비례해서 새로운 폰트 크기 설정
+
+            lb_p_red.Font = new Font(lb_p_red.Font.FontFamily, newFontSize, lb_p_red.Font.Style);
+            lb_p_blue.Font = new Font(lb_p_blue.Font.FontFamily, newFontSize, lb_p_blue.Font.Style);
         }
 
         private void DbTimer_Tick(object sender)
@@ -182,13 +196,50 @@ MySQL 데이터베이스 접근과 같은 작업은 UI 스레드와 분리된 �
                                 if (xValues[6] == 1 && xValues[7] == 1)
                                 {
                                     StartAnimation(pl_dobot2);
-                                }
+                                }                           
 
                             });
                         }
                     }
                 }
             }
+
+
+            using (MySqlConnection connection = new MySqlConnection(User_info.User_connection))
+            {
+                connection.Open();
+                string query = "SELECT * FROM mes.warehouse LIMIT 1";
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    using (MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            this.Invoke((MethodInvoker)delegate
+                            {
+                                red_num = Convert.ToInt32(reader["red"]);
+                                blue_num = Convert.ToInt32(reader["blue"]);
+
+                                // 패널 업데이트
+                                lb_p_red.Text = red_num.ToString();
+                                lb_p_blue.Text = blue_num.ToString();
+
+                                if (red_num >= 1)
+                                {
+                                    pl_p_red.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("p_down_red");
+                                }
+                                if (blue_num >= 1)
+                                {
+                                    pl_p_blue.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("p_down_blue");
+                                }
+                            });
+                        
+                        }
+                    }
+                }
+            }
+            
+
         }
 
         // x01이 시작 위치와 삭제위치가 동시라서 함수를 따로 만듬.
@@ -502,6 +553,19 @@ MySQL 데이터베이스 접근과 같은 작업은 UI 스레드와 분리된 �
 
                 pl_dobot1.BackgroundImage = Properties.Resources.d_d_0; // 원래 이미지로 되돌리기
             animationStates[panel] = false;
+        }
+
+        public void SwitchToAnotherForm()
+        {
+            // 타이머 중지            
+            dbTimer.Change(Timeout.Infinite, Timeout.Infinite);
+
+            // 현재 애니메이션 중지
+            foreach (var timer in animationTimers.Values)
+            {
+                timer.Stop();
+            }
+            animationTimers.Clear();
         }
 
     }

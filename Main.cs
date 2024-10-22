@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -108,7 +109,7 @@ namespace MES
         Form form_ToShow;
 
         private void button_Menu_Click(object sender, EventArgs e)
-        {
+        {           
             if (panel_Main.Controls.Count > 0)
             {
                 if (checkBox_Menu == sender as CheckBox)
@@ -146,6 +147,21 @@ namespace MES
             form_ToShow.Dock = DockStyle.Fill;
             panel_Main.Controls.Add(form_ToShow);
             form_ToShow.Show();
+
+            if (form_ToShow is Dashboard dashboardForm)
+            {
+                dashboardForm.SwitchToAnotherForm();
+            }
+            /*
+            Dashboard dashboardForm = form_ToShow as Dashboard; 
+            //invoke 함수 때문에 타이머 트리거가 종료되지 않아 다른 창을 열때 프로그램 종료되서 추가한 코드.
+            if (dashboardForm != null)
+            {
+                Main mainForm = this; // MainForm 인스턴스 전달
+                dashboardForm.SwitchToAnotherForm(mainForm);
+            }
+            */
         }
+
     }
 }

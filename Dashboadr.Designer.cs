@@ -33,7 +33,10 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pl_con_photo = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.pl_ware = new System.Windows.Forms.Panel();
+            this.pl_p_red = new System.Windows.Forms.Panel();
+            this.lb_p_red = new System.Windows.Forms.Label();
+            this.pl_p_blue = new System.Windows.Forms.Panel();
+            this.lb_p_blue = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.pl_dobot2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
@@ -47,6 +50,8 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.pl_p_red.SuspendLayout();
+            this.pl_p_blue.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.smallDefaultPanel.SuspendLayout();
@@ -130,25 +135,62 @@
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Controls.Add(this.pl_ware, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.pl_p_red, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.pl_p_blue, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(226, 0);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.48148F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.51852F));
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.48485F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.09091F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.42424F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(75, 330);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
-            // pl_ware
+            // pl_p_red
             // 
-            this.pl_ware.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pl_ware.Location = new System.Drawing.Point(3, 3);
-            this.pl_ware.Name = "pl_ware";
-            this.pl_ware.Size = new System.Drawing.Size(69, 180);
-            this.pl_ware.TabIndex = 0;
+            this.pl_p_red.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pl_p_red.Controls.Add(this.lb_p_red);
+            this.pl_p_red.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_p_red.Location = new System.Drawing.Point(3, 3);
+            this.pl_p_red.Name = "pl_p_red";
+            this.pl_p_red.Size = new System.Drawing.Size(69, 88);
+            this.pl_p_red.TabIndex = 1;
+            // 
+            // lb_p_red
+            // 
+            this.lb_p_red.AutoSize = true;
+            this.lb_p_red.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lb_p_red.Font = new System.Drawing.Font("굴림", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lb_p_red.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lb_p_red.Location = new System.Drawing.Point(0, 0);
+            this.lb_p_red.Name = "lb_p_red";
+            this.lb_p_red.Size = new System.Drawing.Size(30, 37);
+            this.lb_p_red.TabIndex = 1;
+            this.lb_p_red.Text = " ";
+            // 
+            // pl_p_blue
+            // 
+            this.pl_p_blue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pl_p_blue.Controls.Add(this.lb_p_blue);
+            this.pl_p_blue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_p_blue.Location = new System.Drawing.Point(3, 97);
+            this.pl_p_blue.Name = "pl_p_blue";
+            this.pl_p_blue.Size = new System.Drawing.Size(69, 90);
+            this.pl_p_blue.TabIndex = 0;
+            // 
+            // lb_p_blue
+            // 
+            this.lb_p_blue.AutoSize = true;
+            this.lb_p_blue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lb_p_blue.Font = new System.Drawing.Font("굴림", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lb_p_blue.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lb_p_blue.Location = new System.Drawing.Point(0, 0);
+            this.lb_p_blue.Name = "lb_p_blue";
+            this.lb_p_blue.Size = new System.Drawing.Size(30, 37);
+            this.lb_p_blue.TabIndex = 0;
+            this.lb_p_blue.Text = " ";
             // 
             // tableLayoutPanel5
             // 
@@ -264,6 +306,10 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.pl_p_red.ResumeLayout(false);
+            this.pl_p_red.PerformLayout();
+            this.pl_p_blue.ResumeLayout(false);
+            this.pl_p_blue.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.smallDefaultPanel.ResumeLayout(false);
@@ -285,8 +331,11 @@
         private System.Windows.Forms.Panel pl_con_c;
         private System.Windows.Forms.TableLayoutPanel smallDefaultPanel;
         private System.Windows.Forms.Panel pl_con_press;
-        private System.Windows.Forms.Panel pl_ware;
         private System.Windows.Forms.Panel pl_dobot2;
         private System.Windows.Forms.Panel pl_dobot1;
+        private System.Windows.Forms.Panel pl_p_blue;
+        private System.Windows.Forms.Panel pl_p_red;
+        private System.Windows.Forms.Label lb_p_blue;
+        private System.Windows.Forms.Label lb_p_red;
     }
 }

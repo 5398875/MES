@@ -209,5 +209,50 @@
   <ItemGroup>
     <None Include="Resources\board.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DashBoard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_right.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

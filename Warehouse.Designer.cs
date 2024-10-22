@@ -2248,6 +2248,7 @@
             // 
             // lb_red_f
             // 
+            this.lb_red_f.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_red_f.AutoSize = true;
             this.lb_red_f.Font = new System.Drawing.Font("굴림", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lb_red_f.ForeColor = System.Drawing.Color.Snow;
@@ -2261,6 +2262,7 @@
             // 
             // lb_red_s
             // 
+            this.lb_red_s.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_red_s.AutoSize = true;
             this.lb_red_s.Font = new System.Drawing.Font("굴림", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lb_red_s.ForeColor = System.Drawing.Color.Snow;
@@ -2274,6 +2276,7 @@
             // 
             // lb_blue_s
             // 
+            this.lb_blue_s.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_blue_s.AutoSize = true;
             this.lb_blue_s.Font = new System.Drawing.Font("굴림", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lb_blue_s.ForeColor = System.Drawing.Color.Snow;
@@ -2287,6 +2290,7 @@
             // 
             // lb_blue_f
             // 
+            this.lb_blue_f.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_blue_f.AutoSize = true;
             this.lb_blue_f.Font = new System.Drawing.Font("굴림", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lb_blue_f.ForeColor = System.Drawing.Color.Snow;

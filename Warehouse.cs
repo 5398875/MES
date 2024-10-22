@@ -22,7 +22,8 @@ namespace MES
         private float basePanelWidth;
         private float baseFontSize;
         private float basePanelWidthRed;
-        private float basePanelHeight;
+        private float basePanelHeightRed;
+        private float basePanelHeightBlue;
         private float baseLabelWidth;
         private float baseLabelHeight;
 
@@ -33,7 +34,8 @@ namespace MES
             basePanelWidth = panel_bottom.Width;
             baseFontSize = lb_red_f.Font.Size;
             basePanelWidthRed = pl_red_f.Width;
-            basePanelHeight = pl_red_f.Height;
+            basePanelHeightRed = pl_red_f.Height;
+            basePanelHeightBlue = pl_blue_f.Height;
             baseLabelWidth = lb_red_f.Width;
             baseLabelHeight = pl_red_f.Height;
 
@@ -54,7 +56,8 @@ namespace MES
             float newFontSize = baseFontSize * scaleFactor; // 비례해서 새로운 폰트 크기 설정
 
             float newPanelWidth = basePanelWidthRed * scaleFactor;
-            float newPanelHeight = basePanelHeight * scaleFactor;
+            float newPanelHeightRed = basePanelHeightRed * scaleFactor;
+            float newPanelHeightBlue = basePanelHeightBlue * scaleFactor;
             float newLabelWidth = baseLabelWidth * scaleFactor;
             float newLabelHeight = baseLabelHeight * scaleFactor;
 
@@ -64,10 +67,10 @@ namespace MES
             lb_blue_s.Font = new Font(lb_blue_s.Font.FontFamily, newFontSize, lb_blue_s.Font.Style);
 
             // 라벨 위치 조정 (중앙 정렬)
-            lb_red_f.Location = new Point((int)((newPanelWidth - newLabelWidth) / 2), (int)((newPanelHeight - newLabelHeight) / 2));
-            lb_red_s.Location = new Point((int)((newPanelWidth - newLabelWidth) / 2), (int)((newPanelHeight - newLabelHeight) / 2));
-            lb_blue_f.Location = new Point((int)((newPanelWidth - newLabelWidth) / 2), (int)((newPanelHeight - newLabelHeight) / 2));
-            lb_blue_s.Location = new Point((int)((newPanelWidth - newLabelWidth) / 2), (int)((newPanelHeight - newLabelHeight) / 2));
+            lb_red_f.Location = new Point((int)((newPanelWidth - newLabelWidth) / 2), (int)((newPanelHeightRed - newLabelHeight) / 2));
+            lb_red_s.Location = new Point((int)((newPanelWidth - newLabelWidth) / 2), (int)((newPanelHeightRed - newLabelHeight) / 2));
+            lb_blue_f.Location = new Point((int)((newPanelWidth - newLabelWidth) / 2), (int)((newPanelHeightBlue - newLabelHeight) / 2));
+            lb_blue_s.Location = new Point((int)((newPanelWidth - newLabelWidth) / 2), (int)((newPanelHeightBlue - newLabelHeight) / 2));
         }
 
         private void AdjustButtonSizes()

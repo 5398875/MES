@@ -167,6 +167,8 @@
             // 
             // pl_dobot2
             // 
+            this.pl_dobot2.BackgroundImage = global::MES.Properties.Resources.d_d_0;
+            this.pl_dobot2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pl_dobot2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pl_dobot2.Location = new System.Drawing.Point(12, 211);
             this.pl_dobot2.Name = "pl_dobot2";
@@ -190,6 +192,8 @@
             // 
             // pl_dobot1
             // 
+            this.pl_dobot1.BackgroundImage = global::MES.Properties.Resources.d_d_0;
+            this.pl_dobot1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pl_dobot1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pl_dobot1.Location = new System.Drawing.Point(3, 211);
             this.pl_dobot1.Name = "pl_dobot1";

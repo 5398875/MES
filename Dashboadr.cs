@@ -172,8 +172,18 @@ MySQL 데이터베이스 접근과 같은 작업은 UI 스레드와 분리된 �
                                 if (xValues[6] == 1 && panelGroups.ContainsKey(pl_con_c) && panelGroups[pl_con_c].Count > 0 && panelGroups[pl_con_c].First().Bottom + panelGroups[pl_con_c].First().Margin.Bottom >= GetParentPanelBasedOnXValue(0x06).Height)
                                 {
                                     DeleteOldestPanel(GetParentPanelBasedOnXValue(0x06), "top");
-                                }                              
-                             
+                                }
+
+                                if (xValues[3] == 1 && xValues[4] == 1)
+                                {
+                                    StartAnimation(pl_dobot1);
+                                }
+
+                                if (xValues[6] == 1 && xValues[7] == 1)
+                                {
+                                    StartAnimation(pl_dobot2);
+                                }
+
                             });
                         }
                     }
@@ -467,6 +477,31 @@ MySQL 데이터베이스 접근과 같은 작업은 UI 스레드와 분리된 �
                     AnimatePanel(panel, parentPanel, startPosition);
                 }
             }
+        }
+
+        private Dictionary<Panel, bool> animationStates = new Dictionary<Panel, bool>();
+
+        private async void StartAnimation(Panel panel)
+        {
+            
+            if (animationStates.ContainsKey(panel) && animationStates[panel]) return; // 해당 패널이 애니메이션 중이면 새로운 애니메이션 시작하지 않음
+
+            animationStates[panel] = true;
+
+
+            for (int i = 1; i <= 23; i++)
+            {
+                panel.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject($"d_d_{i}");
+                await Task.Delay(80); // 3초 동안 23개의 프레임을 보여주기 위해 130ms 대기
+            }
+            for (int i = 22; i >= 1; i--)
+            {
+                panel.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject($"d_d_{i}");
+                await Task.Delay(80);
+            }
+
+                pl_dobot1.BackgroundImage = Properties.Resources.d_d_0; // 원래 이미지로 되돌리기
+            animationStates[panel] = false;
         }
 
     }

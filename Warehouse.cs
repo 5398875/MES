@@ -18,10 +18,24 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 namespace MES
 {
     public partial class Warehouse : Form
-    {
+    {    
+        private float basePanelWidth;
+        private float baseFontSize;
+        private float basePanelWidthRed;
+        private float basePanelHeight;
+        private float baseLabelWidth;
+        private float baseLabelHeight;
+
         public Warehouse()
         {
             InitializeComponent();
+
+            basePanelWidth = panel_bottom.Width;
+            baseFontSize = lb_red_f.Font.Size;
+            basePanelWidthRed = pl_red_f.Width;
+            basePanelHeight = pl_red_f.Height;
+            baseLabelWidth = lb_red_f.Width;
+            baseLabelHeight = pl_red_f.Height;
 
             panel_button.Resize += new EventHandler(Panel1_Resize); // 폼 사이즈 이벤트핸들러
 
@@ -35,6 +49,25 @@ namespace MES
         private void Panel1_Resize(object sender, EventArgs e) // 폼 사이즈 이벤트
         {
             AdjustButtonSizes();
+
+            float scaleFactor = panel_bottom.Width / basePanelWidth; // 크기 변화 비율 계산
+            float newFontSize = baseFontSize * scaleFactor; // 비례해서 새로운 폰트 크기 설정
+
+            float newPanelWidth = basePanelWidthRed * scaleFactor;
+            float newPanelHeight = basePanelHeight * scaleFactor;
+            float newLabelWidth = baseLabelWidth * scaleFactor;
+            float newLabelHeight = baseLabelHeight * scaleFactor;
+
+            lb_red_f.Font = new Font(lb_red_f.Font.FontFamily, newFontSize, lb_red_f.Font.Style);
+            lb_red_s.Font = new Font(lb_red_s.Font.FontFamily, newFontSize, lb_red_s.Font.Style);
+            lb_blue_f.Font = new Font(lb_blue_f.Font.FontFamily, newFontSize, lb_blue_f.Font.Style);
+            lb_blue_s.Font = new Font(lb_blue_s.Font.FontFamily, newFontSize, lb_blue_s.Font.Style);
+
+            // 라벨 위치 조정 (중앙 정렬)
+            lb_red_f.Location = new Point((int)((newPanelWidth - newLabelWidth) / 2), (int)((newPanelHeight - newLabelHeight) / 2));
+            lb_red_s.Location = new Point((int)((newPanelWidth - newLabelWidth) / 2), (int)((newPanelHeight - newLabelHeight) / 2));
+            lb_blue_f.Location = new Point((int)((newPanelWidth - newLabelWidth) / 2), (int)((newPanelHeight - newLabelHeight) / 2));
+            lb_blue_s.Location = new Point((int)((newPanelWidth - newLabelWidth) / 2), (int)((newPanelHeight - newLabelHeight) / 2));
         }
 
         private void AdjustButtonSizes()

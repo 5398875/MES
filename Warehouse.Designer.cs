@@ -91,11 +91,11 @@
             this.panel123 = new System.Windows.Forms.Panel();
             this.panel124 = new System.Windows.Forms.Panel();
             this.panel125 = new System.Windows.Forms.Panel();
-            this.panel126 = new System.Windows.Forms.Panel();
+            this.pl_red_f = new System.Windows.Forms.Panel();
             this.panel128 = new System.Windows.Forms.Panel();
             this.panel129 = new System.Windows.Forms.Panel();
             this.panel130 = new System.Windows.Forms.Panel();
-            this.panel131 = new System.Windows.Forms.Panel();
+            this.pl_red_s = new System.Windows.Forms.Panel();
             this.panel132 = new System.Windows.Forms.Panel();
             this.panel133 = new System.Windows.Forms.Panel();
             this.panel134 = new System.Windows.Forms.Panel();
@@ -160,11 +160,11 @@
             this.panel74 = new System.Windows.Forms.Panel();
             this.panel75 = new System.Windows.Forms.Panel();
             this.panel76 = new System.Windows.Forms.Panel();
-            this.panel77 = new System.Windows.Forms.Panel();
+            this.pl_blue_f = new System.Windows.Forms.Panel();
             this.panel79 = new System.Windows.Forms.Panel();
             this.panel80 = new System.Windows.Forms.Panel();
             this.panel81 = new System.Windows.Forms.Panel();
-            this.panel82 = new System.Windows.Forms.Panel();
+            this.pl_blue_s = new System.Windows.Forms.Panel();
             this.panel83 = new System.Windows.Forms.Panel();
             this.panel84 = new System.Windows.Forms.Panel();
             this.panel85 = new System.Windows.Forms.Panel();
@@ -173,8 +173,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lb_blue = new System.Windows.Forms.Label();
             this.lb_position = new System.Windows.Forms.Label();
             this.lb_name = new System.Windows.Forms.Label();
+            this.lb_red = new System.Windows.Forms.Label();
             this.panel_bottom = new System.Windows.Forms.Panel();
             this.panel_button = new System.Windows.Forms.Panel();
             this.panel_gap3 = new System.Windows.Forms.Panel();
@@ -186,8 +188,10 @@
             this.panel_gap1 = new System.Windows.Forms.Panel();
             this.bt_empty_outer = new System.Windows.Forms.Panel();
             this.bt_empty = new System.Windows.Forms.Button();
-            this.lb_blue = new System.Windows.Forms.Label();
-            this.lb_red = new System.Windows.Forms.Label();
+            this.lb_red_f = new System.Windows.Forms.Label();
+            this.lb_red_s = new System.Windows.Forms.Label();
+            this.lb_blue_s = new System.Windows.Forms.Label();
+            this.lb_blue_f = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sC1)).BeginInit();
             this.sC1.Panel1.SuspendLayout();
             this.sC1.Panel2.SuspendLayout();
@@ -206,6 +210,8 @@
             this.ph2_red.SuspendLayout();
             this.ph1_red.SuspendLayout();
             this.panel88.SuspendLayout();
+            this.pl_red_f.SuspendLayout();
+            this.pl_red_s.SuspendLayout();
             this.tLP_blue.SuspendLayout();
             this.ph8_blue.SuspendLayout();
             this.ph7_blue.SuspendLayout();
@@ -216,6 +222,8 @@
             this.ph2_blue.SuspendLayout();
             this.ph1_blue.SuspendLayout();
             this.panel38.SuspendLayout();
+            this.pl_blue_f.SuspendLayout();
+            this.pl_blue_s.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -316,11 +324,11 @@
             this.tLP_red.Controls.Add(this.panel123, 0, 8);
             this.tLP_red.Controls.Add(this.panel124, 0, 6);
             this.tLP_red.Controls.Add(this.panel125, 0, 4);
-            this.tLP_red.Controls.Add(this.panel126, 1, 16);
+            this.tLP_red.Controls.Add(this.pl_red_f, 1, 16);
             this.tLP_red.Controls.Add(this.panel128, 1, 14);
             this.tLP_red.Controls.Add(this.panel129, 1, 12);
             this.tLP_red.Controls.Add(this.panel130, 1, 10);
-            this.tLP_red.Controls.Add(this.panel131, 1, 8);
+            this.tLP_red.Controls.Add(this.pl_red_s, 1, 8);
             this.tLP_red.Controls.Add(this.panel132, 1, 6);
             this.tLP_red.Controls.Add(this.panel133, 1, 4);
             this.tLP_red.Controls.Add(this.panel134, 1, 2);
@@ -328,23 +336,23 @@
             this.tLP_red.Location = new System.Drawing.Point(0, 0);
             this.tLP_red.Name = "tLP_red";
             this.tLP_red.RowCount = 17;
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.15228F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522843F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522843F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522843F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522843F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522843F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522843F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522843F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.15228F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.15053F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522956F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522956F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522956F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.520558F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522956F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522956F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522956F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_red.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.15053F));
             this.tLP_red.Size = new System.Drawing.Size(377, 685);
             this.tLP_red.TabIndex = 2;
             // 
@@ -358,7 +366,7 @@
             this.ph8_red.Controls.Add(this.panel2, 1, 2);
             this.ph8_red.Controls.Add(this.panel3, 1, 1);
             this.ph8_red.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph8_red.Location = new System.Drawing.Point(56, 69);
+            this.ph8_red.Location = new System.Drawing.Point(56, 48);
             this.ph8_red.Margin = new System.Windows.Forms.Padding(0);
             this.ph8_red.Name = "ph8_red";
             this.ph8_red.RowCount = 4;
@@ -399,7 +407,7 @@
             this.ph7_red.Controls.Add(this.panel4, 1, 2);
             this.ph7_red.Controls.Add(this.panel5, 1, 1);
             this.ph7_red.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph7_red.Location = new System.Drawing.Point(56, 138);
+            this.ph7_red.Location = new System.Drawing.Point(56, 117);
             this.ph7_red.Margin = new System.Windows.Forms.Padding(0);
             this.ph7_red.Name = "ph7_red";
             this.ph7_red.RowCount = 4;
@@ -440,7 +448,7 @@
             this.ph6_red.Controls.Add(this.panel6, 1, 2);
             this.ph6_red.Controls.Add(this.panel7, 1, 1);
             this.ph6_red.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph6_red.Location = new System.Drawing.Point(56, 207);
+            this.ph6_red.Location = new System.Drawing.Point(56, 186);
             this.ph6_red.Margin = new System.Windows.Forms.Padding(0);
             this.ph6_red.Name = "ph6_red";
             this.ph6_red.RowCount = 4;
@@ -481,7 +489,7 @@
             this.ph5_red.Controls.Add(this.panel8, 1, 2);
             this.ph5_red.Controls.Add(this.panel9, 1, 1);
             this.ph5_red.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph5_red.Location = new System.Drawing.Point(56, 276);
+            this.ph5_red.Location = new System.Drawing.Point(56, 255);
             this.ph5_red.Margin = new System.Windows.Forms.Padding(0);
             this.ph5_red.Name = "ph5_red";
             this.ph5_red.RowCount = 4;
@@ -522,7 +530,7 @@
             this.ph4_red.Controls.Add(this.panel10, 1, 2);
             this.ph4_red.Controls.Add(this.panel11, 1, 1);
             this.ph4_red.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph4_red.Location = new System.Drawing.Point(56, 345);
+            this.ph4_red.Location = new System.Drawing.Point(56, 365);
             this.ph4_red.Margin = new System.Windows.Forms.Padding(0);
             this.ph4_red.Name = "ph4_red";
             this.ph4_red.RowCount = 4;
@@ -563,7 +571,7 @@
             this.ph3_red.Controls.Add(this.panel12, 1, 2);
             this.ph3_red.Controls.Add(this.panel13, 1, 1);
             this.ph3_red.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph3_red.Location = new System.Drawing.Point(56, 414);
+            this.ph3_red.Location = new System.Drawing.Point(56, 434);
             this.ph3_red.Margin = new System.Windows.Forms.Padding(0);
             this.ph3_red.Name = "ph3_red";
             this.ph3_red.RowCount = 4;
@@ -604,7 +612,7 @@
             this.ph2_red.Controls.Add(this.panel14, 1, 2);
             this.ph2_red.Controls.Add(this.panel15, 1, 1);
             this.ph2_red.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph2_red.Location = new System.Drawing.Point(56, 483);
+            this.ph2_red.Location = new System.Drawing.Point(56, 503);
             this.ph2_red.Margin = new System.Windows.Forms.Padding(0);
             this.ph2_red.Name = "ph2_red";
             this.ph2_red.RowCount = 4;
@@ -645,7 +653,7 @@
             this.ph1_red.Controls.Add(this.panel16, 1, 2);
             this.ph1_red.Controls.Add(this.panel17, 1, 1);
             this.ph1_red.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph1_red.Location = new System.Drawing.Point(56, 552);
+            this.ph1_red.Location = new System.Drawing.Point(56, 572);
             this.ph1_red.Margin = new System.Windows.Forms.Padding(0);
             this.ph1_red.Name = "ph1_red";
             this.ph1_red.RowCount = 4;
@@ -683,7 +691,7 @@
             this.panel87.Location = new System.Drawing.Point(56, 0);
             this.panel87.Margin = new System.Windows.Forms.Padding(0);
             this.panel87.Name = "panel87";
-            this.panel87.Size = new System.Drawing.Size(263, 69);
+            this.panel87.Size = new System.Drawing.Size(263, 48);
             this.panel87.TabIndex = 1;
             // 
             // panel88
@@ -694,7 +702,7 @@
             this.panel88.Location = new System.Drawing.Point(0, 0);
             this.panel88.Margin = new System.Windows.Forms.Padding(0);
             this.panel88.Name = "panel88";
-            this.panel88.Size = new System.Drawing.Size(56, 69);
+            this.panel88.Size = new System.Drawing.Size(56, 48);
             this.panel88.TabIndex = 1;
             // 
             // panel89
@@ -704,14 +712,14 @@
             this.panel89.Location = new System.Drawing.Point(0, 0);
             this.panel89.Margin = new System.Windows.Forms.Padding(0);
             this.panel89.Name = "panel89";
-            this.panel89.Size = new System.Drawing.Size(56, 69);
+            this.panel89.Size = new System.Drawing.Size(56, 48);
             this.panel89.TabIndex = 2;
             // 
             // panel90
             // 
             this.panel90.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel90.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel90.Location = new System.Drawing.Point(0, 69);
+            this.panel90.Location = new System.Drawing.Point(0, 48);
             this.panel90.Margin = new System.Windows.Forms.Padding(0);
             this.panel90.Name = "panel90";
             this.panel90.Size = new System.Drawing.Size(56, 59);
@@ -721,7 +729,7 @@
             // 
             this.panel91.BackColor = System.Drawing.Color.MistyRose;
             this.panel91.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel91.Location = new System.Drawing.Point(0, 128);
+            this.panel91.Location = new System.Drawing.Point(0, 107);
             this.panel91.Margin = new System.Windows.Forms.Padding(0);
             this.panel91.Name = "panel91";
             this.panel91.Size = new System.Drawing.Size(56, 10);
@@ -731,7 +739,7 @@
             // 
             this.panel92.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel92.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel92.Location = new System.Drawing.Point(0, 138);
+            this.panel92.Location = new System.Drawing.Point(0, 117);
             this.panel92.Margin = new System.Windows.Forms.Padding(0);
             this.panel92.Name = "panel92";
             this.panel92.Size = new System.Drawing.Size(56, 59);
@@ -741,7 +749,7 @@
             // 
             this.panel93.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel93.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel93.Location = new System.Drawing.Point(0, 207);
+            this.panel93.Location = new System.Drawing.Point(0, 186);
             this.panel93.Margin = new System.Windows.Forms.Padding(0);
             this.panel93.Name = "panel93";
             this.panel93.Size = new System.Drawing.Size(56, 59);
@@ -751,7 +759,7 @@
             // 
             this.panel94.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel94.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel94.Location = new System.Drawing.Point(0, 276);
+            this.panel94.Location = new System.Drawing.Point(0, 255);
             this.panel94.Margin = new System.Windows.Forms.Padding(0);
             this.panel94.Name = "panel94";
             this.panel94.Size = new System.Drawing.Size(56, 59);
@@ -761,7 +769,7 @@
             // 
             this.panel95.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel95.Location = new System.Drawing.Point(0, 345);
+            this.panel95.Location = new System.Drawing.Point(0, 365);
             this.panel95.Margin = new System.Windows.Forms.Padding(0);
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(56, 59);
@@ -771,7 +779,7 @@
             // 
             this.panel96.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel96.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel96.Location = new System.Drawing.Point(0, 414);
+            this.panel96.Location = new System.Drawing.Point(0, 434);
             this.panel96.Margin = new System.Windows.Forms.Padding(0);
             this.panel96.Name = "panel96";
             this.panel96.Size = new System.Drawing.Size(56, 59);
@@ -781,7 +789,7 @@
             // 
             this.panel97.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel97.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel97.Location = new System.Drawing.Point(0, 483);
+            this.panel97.Location = new System.Drawing.Point(0, 503);
             this.panel97.Margin = new System.Windows.Forms.Padding(0);
             this.panel97.Name = "panel97";
             this.panel97.Size = new System.Drawing.Size(56, 59);
@@ -791,7 +799,7 @@
             // 
             this.panel98.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel98.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel98.Location = new System.Drawing.Point(0, 552);
+            this.panel98.Location = new System.Drawing.Point(0, 572);
             this.panel98.Margin = new System.Windows.Forms.Padding(0);
             this.panel98.Name = "panel98";
             this.panel98.Size = new System.Drawing.Size(56, 59);
@@ -801,27 +809,27 @@
             // 
             this.panel100.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel100.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel100.Location = new System.Drawing.Point(0, 611);
+            this.panel100.Location = new System.Drawing.Point(0, 631);
             this.panel100.Margin = new System.Windows.Forms.Padding(0);
             this.panel100.Name = "panel100";
-            this.panel100.Size = new System.Drawing.Size(56, 74);
+            this.panel100.Size = new System.Drawing.Size(56, 54);
             this.panel100.TabIndex = 1;
             // 
             // panel101
             // 
             this.panel101.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel101.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel101.Location = new System.Drawing.Point(319, 611);
+            this.panel101.Location = new System.Drawing.Point(319, 631);
             this.panel101.Margin = new System.Windows.Forms.Padding(0);
             this.panel101.Name = "panel101";
-            this.panel101.Size = new System.Drawing.Size(58, 74);
+            this.panel101.Size = new System.Drawing.Size(58, 54);
             this.panel101.TabIndex = 1;
             // 
             // panel103
             // 
             this.panel103.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel103.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel103.Location = new System.Drawing.Point(319, 552);
+            this.panel103.Location = new System.Drawing.Point(319, 572);
             this.panel103.Margin = new System.Windows.Forms.Padding(0);
             this.panel103.Name = "panel103";
             this.panel103.Size = new System.Drawing.Size(58, 59);
@@ -831,7 +839,7 @@
             // 
             this.panel104.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel104.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel104.Location = new System.Drawing.Point(319, 483);
+            this.panel104.Location = new System.Drawing.Point(319, 503);
             this.panel104.Margin = new System.Windows.Forms.Padding(0);
             this.panel104.Name = "panel104";
             this.panel104.Size = new System.Drawing.Size(58, 59);
@@ -841,7 +849,7 @@
             // 
             this.panel105.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel105.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel105.Location = new System.Drawing.Point(319, 414);
+            this.panel105.Location = new System.Drawing.Point(319, 434);
             this.panel105.Margin = new System.Windows.Forms.Padding(0);
             this.panel105.Name = "panel105";
             this.panel105.Size = new System.Drawing.Size(58, 59);
@@ -851,7 +859,7 @@
             // 
             this.panel106.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel106.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel106.Location = new System.Drawing.Point(319, 345);
+            this.panel106.Location = new System.Drawing.Point(319, 365);
             this.panel106.Margin = new System.Windows.Forms.Padding(0);
             this.panel106.Name = "panel106";
             this.panel106.Size = new System.Drawing.Size(58, 59);
@@ -861,7 +869,7 @@
             // 
             this.panel107.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel107.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel107.Location = new System.Drawing.Point(319, 276);
+            this.panel107.Location = new System.Drawing.Point(319, 255);
             this.panel107.Margin = new System.Windows.Forms.Padding(0);
             this.panel107.Name = "panel107";
             this.panel107.Size = new System.Drawing.Size(58, 59);
@@ -871,7 +879,7 @@
             // 
             this.panel108.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel108.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel108.Location = new System.Drawing.Point(319, 207);
+            this.panel108.Location = new System.Drawing.Point(319, 186);
             this.panel108.Margin = new System.Windows.Forms.Padding(0);
             this.panel108.Name = "panel108";
             this.panel108.Size = new System.Drawing.Size(58, 59);
@@ -881,7 +889,7 @@
             // 
             this.panel109.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel109.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel109.Location = new System.Drawing.Point(319, 138);
+            this.panel109.Location = new System.Drawing.Point(319, 117);
             this.panel109.Margin = new System.Windows.Forms.Padding(0);
             this.panel109.Name = "panel109";
             this.panel109.Size = new System.Drawing.Size(58, 59);
@@ -891,7 +899,7 @@
             // 
             this.panel110.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel110.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel110.Location = new System.Drawing.Point(319, 69);
+            this.panel110.Location = new System.Drawing.Point(319, 48);
             this.panel110.Margin = new System.Windows.Forms.Padding(0);
             this.panel110.Name = "panel110";
             this.panel110.Size = new System.Drawing.Size(58, 59);
@@ -904,14 +912,14 @@
             this.panel111.Location = new System.Drawing.Point(319, 0);
             this.panel111.Margin = new System.Windows.Forms.Padding(0);
             this.panel111.Name = "panel111";
-            this.panel111.Size = new System.Drawing.Size(58, 69);
+            this.panel111.Size = new System.Drawing.Size(58, 48);
             this.panel111.TabIndex = 1;
             // 
             // panel112
             // 
             this.panel112.BackColor = System.Drawing.Color.MistyRose;
             this.panel112.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel112.Location = new System.Drawing.Point(319, 128);
+            this.panel112.Location = new System.Drawing.Point(319, 107);
             this.panel112.Margin = new System.Windows.Forms.Padding(0);
             this.panel112.Name = "panel112";
             this.panel112.Size = new System.Drawing.Size(58, 10);
@@ -921,7 +929,7 @@
             // 
             this.panel113.BackColor = System.Drawing.Color.MistyRose;
             this.panel113.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel113.Location = new System.Drawing.Point(319, 197);
+            this.panel113.Location = new System.Drawing.Point(319, 176);
             this.panel113.Margin = new System.Windows.Forms.Padding(0);
             this.panel113.Name = "panel113";
             this.panel113.Size = new System.Drawing.Size(58, 10);
@@ -931,7 +939,7 @@
             // 
             this.panel114.BackColor = System.Drawing.Color.MistyRose;
             this.panel114.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel114.Location = new System.Drawing.Point(319, 266);
+            this.panel114.Location = new System.Drawing.Point(319, 245);
             this.panel114.Margin = new System.Windows.Forms.Padding(0);
             this.panel114.Name = "panel114";
             this.panel114.Size = new System.Drawing.Size(58, 10);
@@ -939,19 +947,19 @@
             // 
             // panel115
             // 
-            this.panel115.BackColor = System.Drawing.Color.MistyRose;
+            this.panel115.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel115.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel115.Location = new System.Drawing.Point(319, 335);
+            this.panel115.Location = new System.Drawing.Point(319, 314);
             this.panel115.Margin = new System.Windows.Forms.Padding(0);
             this.panel115.Name = "panel115";
-            this.panel115.Size = new System.Drawing.Size(58, 10);
+            this.panel115.Size = new System.Drawing.Size(58, 51);
             this.panel115.TabIndex = 1;
             // 
             // panel116
             // 
             this.panel116.BackColor = System.Drawing.Color.MistyRose;
             this.panel116.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel116.Location = new System.Drawing.Point(319, 404);
+            this.panel116.Location = new System.Drawing.Point(319, 424);
             this.panel116.Margin = new System.Windows.Forms.Padding(0);
             this.panel116.Name = "panel116";
             this.panel116.Size = new System.Drawing.Size(58, 10);
@@ -961,7 +969,7 @@
             // 
             this.panel117.BackColor = System.Drawing.Color.MistyRose;
             this.panel117.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel117.Location = new System.Drawing.Point(319, 473);
+            this.panel117.Location = new System.Drawing.Point(319, 493);
             this.panel117.Margin = new System.Windows.Forms.Padding(0);
             this.panel117.Name = "panel117";
             this.panel117.Size = new System.Drawing.Size(58, 10);
@@ -971,7 +979,7 @@
             // 
             this.panel118.BackColor = System.Drawing.Color.MistyRose;
             this.panel118.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel118.Location = new System.Drawing.Point(319, 542);
+            this.panel118.Location = new System.Drawing.Point(319, 562);
             this.panel118.Margin = new System.Windows.Forms.Padding(0);
             this.panel118.Name = "panel118";
             this.panel118.Size = new System.Drawing.Size(58, 10);
@@ -981,7 +989,7 @@
             // 
             this.panel120.BackColor = System.Drawing.Color.MistyRose;
             this.panel120.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel120.Location = new System.Drawing.Point(0, 542);
+            this.panel120.Location = new System.Drawing.Point(0, 562);
             this.panel120.Margin = new System.Windows.Forms.Padding(0);
             this.panel120.Name = "panel120";
             this.panel120.Size = new System.Drawing.Size(56, 10);
@@ -991,7 +999,7 @@
             // 
             this.panel121.BackColor = System.Drawing.Color.MistyRose;
             this.panel121.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel121.Location = new System.Drawing.Point(0, 473);
+            this.panel121.Location = new System.Drawing.Point(0, 493);
             this.panel121.Margin = new System.Windows.Forms.Padding(0);
             this.panel121.Name = "panel121";
             this.panel121.Size = new System.Drawing.Size(56, 10);
@@ -1001,7 +1009,7 @@
             // 
             this.panel122.BackColor = System.Drawing.Color.MistyRose;
             this.panel122.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel122.Location = new System.Drawing.Point(0, 404);
+            this.panel122.Location = new System.Drawing.Point(0, 424);
             this.panel122.Margin = new System.Windows.Forms.Padding(0);
             this.panel122.Name = "panel122";
             this.panel122.Size = new System.Drawing.Size(56, 10);
@@ -1009,19 +1017,19 @@
             // 
             // panel123
             // 
-            this.panel123.BackColor = System.Drawing.Color.MistyRose;
+            this.panel123.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel123.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel123.Location = new System.Drawing.Point(0, 335);
+            this.panel123.Location = new System.Drawing.Point(0, 314);
             this.panel123.Margin = new System.Windows.Forms.Padding(0);
             this.panel123.Name = "panel123";
-            this.panel123.Size = new System.Drawing.Size(56, 10);
+            this.panel123.Size = new System.Drawing.Size(56, 51);
             this.panel123.TabIndex = 1;
             // 
             // panel124
             // 
             this.panel124.BackColor = System.Drawing.Color.MistyRose;
             this.panel124.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel124.Location = new System.Drawing.Point(0, 266);
+            this.panel124.Location = new System.Drawing.Point(0, 245);
             this.panel124.Margin = new System.Windows.Forms.Padding(0);
             this.panel124.Name = "panel124";
             this.panel124.Size = new System.Drawing.Size(56, 10);
@@ -1031,27 +1039,28 @@
             // 
             this.panel125.BackColor = System.Drawing.Color.MistyRose;
             this.panel125.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel125.Location = new System.Drawing.Point(0, 197);
+            this.panel125.Location = new System.Drawing.Point(0, 176);
             this.panel125.Margin = new System.Windows.Forms.Padding(0);
             this.panel125.Name = "panel125";
             this.panel125.Size = new System.Drawing.Size(56, 10);
             this.panel125.TabIndex = 1;
             // 
-            // panel126
+            // pl_red_f
             // 
-            this.panel126.BackColor = System.Drawing.Color.DarkSalmon;
-            this.panel126.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel126.Location = new System.Drawing.Point(56, 611);
-            this.panel126.Margin = new System.Windows.Forms.Padding(0);
-            this.panel126.Name = "panel126";
-            this.panel126.Size = new System.Drawing.Size(263, 74);
-            this.panel126.TabIndex = 1;
+            this.pl_red_f.BackColor = System.Drawing.Color.DarkSalmon;
+            this.pl_red_f.Controls.Add(this.lb_red_f);
+            this.pl_red_f.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_red_f.Location = new System.Drawing.Point(56, 631);
+            this.pl_red_f.Margin = new System.Windows.Forms.Padding(0);
+            this.pl_red_f.Name = "pl_red_f";
+            this.pl_red_f.Size = new System.Drawing.Size(263, 54);
+            this.pl_red_f.TabIndex = 1;
             // 
             // panel128
             // 
             this.panel128.BackColor = System.Drawing.Color.MistyRose;
             this.panel128.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel128.Location = new System.Drawing.Point(56, 542);
+            this.panel128.Location = new System.Drawing.Point(56, 562);
             this.panel128.Margin = new System.Windows.Forms.Padding(0);
             this.panel128.Name = "panel128";
             this.panel128.Size = new System.Drawing.Size(263, 10);
@@ -1061,7 +1070,7 @@
             // 
             this.panel129.BackColor = System.Drawing.Color.MistyRose;
             this.panel129.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel129.Location = new System.Drawing.Point(56, 473);
+            this.panel129.Location = new System.Drawing.Point(56, 493);
             this.panel129.Margin = new System.Windows.Forms.Padding(0);
             this.panel129.Name = "panel129";
             this.panel129.Size = new System.Drawing.Size(263, 10);
@@ -1071,27 +1080,28 @@
             // 
             this.panel130.BackColor = System.Drawing.Color.MistyRose;
             this.panel130.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel130.Location = new System.Drawing.Point(56, 404);
+            this.panel130.Location = new System.Drawing.Point(56, 424);
             this.panel130.Margin = new System.Windows.Forms.Padding(0);
             this.panel130.Name = "panel130";
             this.panel130.Size = new System.Drawing.Size(263, 10);
             this.panel130.TabIndex = 1;
             // 
-            // panel131
+            // pl_red_s
             // 
-            this.panel131.BackColor = System.Drawing.Color.MistyRose;
-            this.panel131.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel131.Location = new System.Drawing.Point(56, 335);
-            this.panel131.Margin = new System.Windows.Forms.Padding(0);
-            this.panel131.Name = "panel131";
-            this.panel131.Size = new System.Drawing.Size(263, 10);
-            this.panel131.TabIndex = 1;
+            this.pl_red_s.BackColor = System.Drawing.Color.DarkSalmon;
+            this.pl_red_s.Controls.Add(this.lb_red_s);
+            this.pl_red_s.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_red_s.Location = new System.Drawing.Point(56, 314);
+            this.pl_red_s.Margin = new System.Windows.Forms.Padding(0);
+            this.pl_red_s.Name = "pl_red_s";
+            this.pl_red_s.Size = new System.Drawing.Size(263, 51);
+            this.pl_red_s.TabIndex = 1;
             // 
             // panel132
             // 
             this.panel132.BackColor = System.Drawing.Color.MistyRose;
             this.panel132.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel132.Location = new System.Drawing.Point(56, 266);
+            this.panel132.Location = new System.Drawing.Point(56, 245);
             this.panel132.Margin = new System.Windows.Forms.Padding(0);
             this.panel132.Name = "panel132";
             this.panel132.Size = new System.Drawing.Size(263, 10);
@@ -1101,7 +1111,7 @@
             // 
             this.panel133.BackColor = System.Drawing.Color.MistyRose;
             this.panel133.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel133.Location = new System.Drawing.Point(56, 197);
+            this.panel133.Location = new System.Drawing.Point(56, 176);
             this.panel133.Margin = new System.Windows.Forms.Padding(0);
             this.panel133.Name = "panel133";
             this.panel133.Size = new System.Drawing.Size(263, 10);
@@ -1111,7 +1121,7 @@
             // 
             this.panel134.BackColor = System.Drawing.Color.MistyRose;
             this.panel134.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel134.Location = new System.Drawing.Point(56, 128);
+            this.panel134.Location = new System.Drawing.Point(56, 107);
             this.panel134.Margin = new System.Windows.Forms.Padding(0);
             this.panel134.Name = "panel134";
             this.panel134.Size = new System.Drawing.Size(263, 10);
@@ -1167,11 +1177,11 @@
             this.tLP_blue.Controls.Add(this.panel74, 0, 8);
             this.tLP_blue.Controls.Add(this.panel75, 0, 6);
             this.tLP_blue.Controls.Add(this.panel76, 0, 4);
-            this.tLP_blue.Controls.Add(this.panel77, 1, 16);
+            this.tLP_blue.Controls.Add(this.pl_blue_f, 1, 16);
             this.tLP_blue.Controls.Add(this.panel79, 1, 14);
             this.tLP_blue.Controls.Add(this.panel80, 1, 12);
             this.tLP_blue.Controls.Add(this.panel81, 1, 10);
-            this.tLP_blue.Controls.Add(this.panel82, 1, 8);
+            this.tLP_blue.Controls.Add(this.pl_blue_s, 1, 8);
             this.tLP_blue.Controls.Add(this.panel83, 1, 6);
             this.tLP_blue.Controls.Add(this.panel84, 1, 4);
             this.tLP_blue.Controls.Add(this.panel85, 1, 2);
@@ -1179,25 +1189,23 @@
             this.tLP_blue.Location = new System.Drawing.Point(0, 0);
             this.tLP_blue.Name = "tLP_blue";
             this.tLP_blue.RowCount = 17;
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.15228F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522843F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522843F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522843F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522843F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522843F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522843F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522843F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.629441F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.15228F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.15053F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522956F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522956F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522956F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.520558F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522956F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522956F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.522956F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.630081F));
+            this.tLP_blue.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.15053F));
             this.tLP_blue.Size = new System.Drawing.Size(363, 685);
             this.tLP_blue.TabIndex = 1;
             // 
@@ -1211,7 +1219,7 @@
             this.ph8_blue.Controls.Add(this.panel19, 1, 2);
             this.ph8_blue.Controls.Add(this.panel20, 1, 1);
             this.ph8_blue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph8_blue.Location = new System.Drawing.Point(54, 69);
+            this.ph8_blue.Location = new System.Drawing.Point(54, 48);
             this.ph8_blue.Margin = new System.Windows.Forms.Padding(0);
             this.ph8_blue.Name = "ph8_blue";
             this.ph8_blue.RowCount = 4;
@@ -1252,7 +1260,7 @@
             this.ph7_blue.Controls.Add(this.panel21, 1, 2);
             this.ph7_blue.Controls.Add(this.panel22, 1, 1);
             this.ph7_blue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph7_blue.Location = new System.Drawing.Point(54, 138);
+            this.ph7_blue.Location = new System.Drawing.Point(54, 117);
             this.ph7_blue.Margin = new System.Windows.Forms.Padding(0);
             this.ph7_blue.Name = "ph7_blue";
             this.ph7_blue.RowCount = 4;
@@ -1293,7 +1301,7 @@
             this.ph6_blue.Controls.Add(this.panel23, 1, 2);
             this.ph6_blue.Controls.Add(this.panel24, 1, 1);
             this.ph6_blue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph6_blue.Location = new System.Drawing.Point(54, 207);
+            this.ph6_blue.Location = new System.Drawing.Point(54, 186);
             this.ph6_blue.Margin = new System.Windows.Forms.Padding(0);
             this.ph6_blue.Name = "ph6_blue";
             this.ph6_blue.RowCount = 4;
@@ -1334,7 +1342,7 @@
             this.ph5_blue.Controls.Add(this.panel25, 1, 2);
             this.ph5_blue.Controls.Add(this.panel26, 1, 1);
             this.ph5_blue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph5_blue.Location = new System.Drawing.Point(54, 276);
+            this.ph5_blue.Location = new System.Drawing.Point(54, 255);
             this.ph5_blue.Margin = new System.Windows.Forms.Padding(0);
             this.ph5_blue.Name = "ph5_blue";
             this.ph5_blue.RowCount = 4;
@@ -1375,7 +1383,7 @@
             this.ph4_blue.Controls.Add(this.panel27, 1, 2);
             this.ph4_blue.Controls.Add(this.panel28, 1, 1);
             this.ph4_blue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph4_blue.Location = new System.Drawing.Point(54, 345);
+            this.ph4_blue.Location = new System.Drawing.Point(54, 365);
             this.ph4_blue.Margin = new System.Windows.Forms.Padding(0);
             this.ph4_blue.Name = "ph4_blue";
             this.ph4_blue.RowCount = 4;
@@ -1416,7 +1424,7 @@
             this.ph3_blue.Controls.Add(this.panel29, 1, 2);
             this.ph3_blue.Controls.Add(this.panel30, 1, 1);
             this.ph3_blue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph3_blue.Location = new System.Drawing.Point(54, 414);
+            this.ph3_blue.Location = new System.Drawing.Point(54, 434);
             this.ph3_blue.Margin = new System.Windows.Forms.Padding(0);
             this.ph3_blue.Name = "ph3_blue";
             this.ph3_blue.RowCount = 4;
@@ -1457,7 +1465,7 @@
             this.ph2_blue.Controls.Add(this.panel31, 1, 2);
             this.ph2_blue.Controls.Add(this.panel32, 1, 1);
             this.ph2_blue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph2_blue.Location = new System.Drawing.Point(54, 483);
+            this.ph2_blue.Location = new System.Drawing.Point(54, 503);
             this.ph2_blue.Margin = new System.Windows.Forms.Padding(0);
             this.ph2_blue.Name = "ph2_blue";
             this.ph2_blue.RowCount = 4;
@@ -1498,7 +1506,7 @@
             this.ph1_blue.Controls.Add(this.panel33, 1, 2);
             this.ph1_blue.Controls.Add(this.panel34, 1, 1);
             this.ph1_blue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph1_blue.Location = new System.Drawing.Point(54, 552);
+            this.ph1_blue.Location = new System.Drawing.Point(54, 572);
             this.ph1_blue.Margin = new System.Windows.Forms.Padding(0);
             this.ph1_blue.Name = "ph1_blue";
             this.ph1_blue.RowCount = 4;
@@ -1536,7 +1544,7 @@
             this.panel37.Location = new System.Drawing.Point(54, 0);
             this.panel37.Margin = new System.Windows.Forms.Padding(0);
             this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(254, 69);
+            this.panel37.Size = new System.Drawing.Size(254, 48);
             this.panel37.TabIndex = 1;
             // 
             // panel38
@@ -1547,7 +1555,7 @@
             this.panel38.Location = new System.Drawing.Point(0, 0);
             this.panel38.Margin = new System.Windows.Forms.Padding(0);
             this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(54, 69);
+            this.panel38.Size = new System.Drawing.Size(54, 48);
             this.panel38.TabIndex = 1;
             // 
             // panel39
@@ -1557,14 +1565,14 @@
             this.panel39.Location = new System.Drawing.Point(0, 0);
             this.panel39.Margin = new System.Windows.Forms.Padding(0);
             this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(54, 69);
+            this.panel39.Size = new System.Drawing.Size(54, 48);
             this.panel39.TabIndex = 2;
             // 
             // panel40
             // 
             this.panel40.BackColor = System.Drawing.Color.SteelBlue;
             this.panel40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel40.Location = new System.Drawing.Point(0, 69);
+            this.panel40.Location = new System.Drawing.Point(0, 48);
             this.panel40.Margin = new System.Windows.Forms.Padding(0);
             this.panel40.Name = "panel40";
             this.panel40.Size = new System.Drawing.Size(54, 59);
@@ -1574,7 +1582,7 @@
             // 
             this.panel41.BackColor = System.Drawing.Color.Lavender;
             this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel41.Location = new System.Drawing.Point(0, 128);
+            this.panel41.Location = new System.Drawing.Point(0, 107);
             this.panel41.Margin = new System.Windows.Forms.Padding(0);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(54, 10);
@@ -1584,7 +1592,7 @@
             // 
             this.panel42.BackColor = System.Drawing.Color.SteelBlue;
             this.panel42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel42.Location = new System.Drawing.Point(0, 138);
+            this.panel42.Location = new System.Drawing.Point(0, 117);
             this.panel42.Margin = new System.Windows.Forms.Padding(0);
             this.panel42.Name = "panel42";
             this.panel42.Size = new System.Drawing.Size(54, 59);
@@ -1594,7 +1602,7 @@
             // 
             this.panel43.BackColor = System.Drawing.Color.SteelBlue;
             this.panel43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel43.Location = new System.Drawing.Point(0, 207);
+            this.panel43.Location = new System.Drawing.Point(0, 186);
             this.panel43.Margin = new System.Windows.Forms.Padding(0);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(54, 59);
@@ -1604,7 +1612,7 @@
             // 
             this.panel44.BackColor = System.Drawing.Color.SteelBlue;
             this.panel44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel44.Location = new System.Drawing.Point(0, 276);
+            this.panel44.Location = new System.Drawing.Point(0, 255);
             this.panel44.Margin = new System.Windows.Forms.Padding(0);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(54, 59);
@@ -1614,7 +1622,7 @@
             // 
             this.panel45.BackColor = System.Drawing.Color.SteelBlue;
             this.panel45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel45.Location = new System.Drawing.Point(0, 345);
+            this.panel45.Location = new System.Drawing.Point(0, 365);
             this.panel45.Margin = new System.Windows.Forms.Padding(0);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(54, 59);
@@ -1624,7 +1632,7 @@
             // 
             this.panel46.BackColor = System.Drawing.Color.SteelBlue;
             this.panel46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel46.Location = new System.Drawing.Point(0, 414);
+            this.panel46.Location = new System.Drawing.Point(0, 434);
             this.panel46.Margin = new System.Windows.Forms.Padding(0);
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(54, 59);
@@ -1634,7 +1642,7 @@
             // 
             this.panel47.BackColor = System.Drawing.Color.SteelBlue;
             this.panel47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel47.Location = new System.Drawing.Point(0, 483);
+            this.panel47.Location = new System.Drawing.Point(0, 503);
             this.panel47.Margin = new System.Windows.Forms.Padding(0);
             this.panel47.Name = "panel47";
             this.panel47.Size = new System.Drawing.Size(54, 59);
@@ -1644,7 +1652,7 @@
             // 
             this.panel48.BackColor = System.Drawing.Color.SteelBlue;
             this.panel48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel48.Location = new System.Drawing.Point(0, 552);
+            this.panel48.Location = new System.Drawing.Point(0, 572);
             this.panel48.Margin = new System.Windows.Forms.Padding(0);
             this.panel48.Name = "panel48";
             this.panel48.Size = new System.Drawing.Size(54, 59);
@@ -1654,27 +1662,27 @@
             // 
             this.panel50.BackColor = System.Drawing.Color.SteelBlue;
             this.panel50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel50.Location = new System.Drawing.Point(0, 611);
+            this.panel50.Location = new System.Drawing.Point(0, 631);
             this.panel50.Margin = new System.Windows.Forms.Padding(0);
             this.panel50.Name = "panel50";
-            this.panel50.Size = new System.Drawing.Size(54, 74);
+            this.panel50.Size = new System.Drawing.Size(54, 54);
             this.panel50.TabIndex = 1;
             // 
             // panel51
             // 
             this.panel51.BackColor = System.Drawing.Color.SteelBlue;
             this.panel51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel51.Location = new System.Drawing.Point(308, 611);
+            this.panel51.Location = new System.Drawing.Point(308, 631);
             this.panel51.Margin = new System.Windows.Forms.Padding(0);
             this.panel51.Name = "panel51";
-            this.panel51.Size = new System.Drawing.Size(55, 74);
+            this.panel51.Size = new System.Drawing.Size(55, 54);
             this.panel51.TabIndex = 1;
             // 
             // panel53
             // 
             this.panel53.BackColor = System.Drawing.Color.SteelBlue;
             this.panel53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel53.Location = new System.Drawing.Point(308, 552);
+            this.panel53.Location = new System.Drawing.Point(308, 572);
             this.panel53.Margin = new System.Windows.Forms.Padding(0);
             this.panel53.Name = "panel53";
             this.panel53.Size = new System.Drawing.Size(55, 59);
@@ -1684,7 +1692,7 @@
             // 
             this.panel54.BackColor = System.Drawing.Color.SteelBlue;
             this.panel54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel54.Location = new System.Drawing.Point(308, 483);
+            this.panel54.Location = new System.Drawing.Point(308, 503);
             this.panel54.Margin = new System.Windows.Forms.Padding(0);
             this.panel54.Name = "panel54";
             this.panel54.Size = new System.Drawing.Size(55, 59);
@@ -1694,7 +1702,7 @@
             // 
             this.panel55.BackColor = System.Drawing.Color.SteelBlue;
             this.panel55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel55.Location = new System.Drawing.Point(308, 414);
+            this.panel55.Location = new System.Drawing.Point(308, 434);
             this.panel55.Margin = new System.Windows.Forms.Padding(0);
             this.panel55.Name = "panel55";
             this.panel55.Size = new System.Drawing.Size(55, 59);
@@ -1704,7 +1712,7 @@
             // 
             this.panel56.BackColor = System.Drawing.Color.SteelBlue;
             this.panel56.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel56.Location = new System.Drawing.Point(308, 345);
+            this.panel56.Location = new System.Drawing.Point(308, 365);
             this.panel56.Margin = new System.Windows.Forms.Padding(0);
             this.panel56.Name = "panel56";
             this.panel56.Size = new System.Drawing.Size(55, 59);
@@ -1714,7 +1722,7 @@
             // 
             this.panel57.BackColor = System.Drawing.Color.SteelBlue;
             this.panel57.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel57.Location = new System.Drawing.Point(308, 276);
+            this.panel57.Location = new System.Drawing.Point(308, 255);
             this.panel57.Margin = new System.Windows.Forms.Padding(0);
             this.panel57.Name = "panel57";
             this.panel57.Size = new System.Drawing.Size(55, 59);
@@ -1724,7 +1732,7 @@
             // 
             this.panel58.BackColor = System.Drawing.Color.SteelBlue;
             this.panel58.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel58.Location = new System.Drawing.Point(308, 207);
+            this.panel58.Location = new System.Drawing.Point(308, 186);
             this.panel58.Margin = new System.Windows.Forms.Padding(0);
             this.panel58.Name = "panel58";
             this.panel58.Size = new System.Drawing.Size(55, 59);
@@ -1734,7 +1742,7 @@
             // 
             this.panel59.BackColor = System.Drawing.Color.SteelBlue;
             this.panel59.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel59.Location = new System.Drawing.Point(308, 138);
+            this.panel59.Location = new System.Drawing.Point(308, 117);
             this.panel59.Margin = new System.Windows.Forms.Padding(0);
             this.panel59.Name = "panel59";
             this.panel59.Size = new System.Drawing.Size(55, 59);
@@ -1744,7 +1752,7 @@
             // 
             this.panel60.BackColor = System.Drawing.Color.SteelBlue;
             this.panel60.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel60.Location = new System.Drawing.Point(308, 69);
+            this.panel60.Location = new System.Drawing.Point(308, 48);
             this.panel60.Margin = new System.Windows.Forms.Padding(0);
             this.panel60.Name = "panel60";
             this.panel60.Size = new System.Drawing.Size(55, 59);
@@ -1757,14 +1765,14 @@
             this.panel61.Location = new System.Drawing.Point(308, 0);
             this.panel61.Margin = new System.Windows.Forms.Padding(0);
             this.panel61.Name = "panel61";
-            this.panel61.Size = new System.Drawing.Size(55, 69);
+            this.panel61.Size = new System.Drawing.Size(55, 48);
             this.panel61.TabIndex = 1;
             // 
             // panel62
             // 
             this.panel62.BackColor = System.Drawing.Color.Lavender;
             this.panel62.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel62.Location = new System.Drawing.Point(308, 128);
+            this.panel62.Location = new System.Drawing.Point(308, 107);
             this.panel62.Margin = new System.Windows.Forms.Padding(0);
             this.panel62.Name = "panel62";
             this.panel62.Size = new System.Drawing.Size(55, 10);
@@ -1774,7 +1782,7 @@
             // 
             this.panel63.BackColor = System.Drawing.Color.Lavender;
             this.panel63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel63.Location = new System.Drawing.Point(308, 197);
+            this.panel63.Location = new System.Drawing.Point(308, 176);
             this.panel63.Margin = new System.Windows.Forms.Padding(0);
             this.panel63.Name = "panel63";
             this.panel63.Size = new System.Drawing.Size(55, 10);
@@ -1784,7 +1792,7 @@
             // 
             this.panel64.BackColor = System.Drawing.Color.Lavender;
             this.panel64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel64.Location = new System.Drawing.Point(308, 266);
+            this.panel64.Location = new System.Drawing.Point(308, 245);
             this.panel64.Margin = new System.Windows.Forms.Padding(0);
             this.panel64.Name = "panel64";
             this.panel64.Size = new System.Drawing.Size(55, 10);
@@ -1792,19 +1800,19 @@
             // 
             // panel65
             // 
-            this.panel65.BackColor = System.Drawing.Color.Lavender;
+            this.panel65.BackColor = System.Drawing.Color.SteelBlue;
             this.panel65.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel65.Location = new System.Drawing.Point(308, 335);
+            this.panel65.Location = new System.Drawing.Point(308, 314);
             this.panel65.Margin = new System.Windows.Forms.Padding(0);
             this.panel65.Name = "panel65";
-            this.panel65.Size = new System.Drawing.Size(55, 10);
+            this.panel65.Size = new System.Drawing.Size(55, 51);
             this.panel65.TabIndex = 1;
             // 
             // panel66
             // 
             this.panel66.BackColor = System.Drawing.Color.Lavender;
             this.panel66.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel66.Location = new System.Drawing.Point(308, 404);
+            this.panel66.Location = new System.Drawing.Point(308, 424);
             this.panel66.Margin = new System.Windows.Forms.Padding(0);
             this.panel66.Name = "panel66";
             this.panel66.Size = new System.Drawing.Size(55, 10);
@@ -1814,7 +1822,7 @@
             // 
             this.panel67.BackColor = System.Drawing.Color.Lavender;
             this.panel67.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel67.Location = new System.Drawing.Point(308, 473);
+            this.panel67.Location = new System.Drawing.Point(308, 493);
             this.panel67.Margin = new System.Windows.Forms.Padding(0);
             this.panel67.Name = "panel67";
             this.panel67.Size = new System.Drawing.Size(55, 10);
@@ -1824,7 +1832,7 @@
             // 
             this.panel68.BackColor = System.Drawing.Color.Lavender;
             this.panel68.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel68.Location = new System.Drawing.Point(308, 542);
+            this.panel68.Location = new System.Drawing.Point(308, 562);
             this.panel68.Margin = new System.Windows.Forms.Padding(0);
             this.panel68.Name = "panel68";
             this.panel68.Size = new System.Drawing.Size(55, 10);
@@ -1834,7 +1842,7 @@
             // 
             this.panel71.BackColor = System.Drawing.Color.Lavender;
             this.panel71.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel71.Location = new System.Drawing.Point(0, 542);
+            this.panel71.Location = new System.Drawing.Point(0, 562);
             this.panel71.Margin = new System.Windows.Forms.Padding(0);
             this.panel71.Name = "panel71";
             this.panel71.Size = new System.Drawing.Size(54, 10);
@@ -1844,7 +1852,7 @@
             // 
             this.panel72.BackColor = System.Drawing.Color.Lavender;
             this.panel72.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel72.Location = new System.Drawing.Point(0, 473);
+            this.panel72.Location = new System.Drawing.Point(0, 493);
             this.panel72.Margin = new System.Windows.Forms.Padding(0);
             this.panel72.Name = "panel72";
             this.panel72.Size = new System.Drawing.Size(54, 10);
@@ -1854,7 +1862,7 @@
             // 
             this.panel73.BackColor = System.Drawing.Color.Lavender;
             this.panel73.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel73.Location = new System.Drawing.Point(0, 404);
+            this.panel73.Location = new System.Drawing.Point(0, 424);
             this.panel73.Margin = new System.Windows.Forms.Padding(0);
             this.panel73.Name = "panel73";
             this.panel73.Size = new System.Drawing.Size(54, 10);
@@ -1862,19 +1870,19 @@
             // 
             // panel74
             // 
-            this.panel74.BackColor = System.Drawing.Color.Lavender;
+            this.panel74.BackColor = System.Drawing.Color.SteelBlue;
             this.panel74.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel74.Location = new System.Drawing.Point(0, 335);
+            this.panel74.Location = new System.Drawing.Point(0, 314);
             this.panel74.Margin = new System.Windows.Forms.Padding(0);
             this.panel74.Name = "panel74";
-            this.panel74.Size = new System.Drawing.Size(54, 10);
+            this.panel74.Size = new System.Drawing.Size(54, 51);
             this.panel74.TabIndex = 1;
             // 
             // panel75
             // 
             this.panel75.BackColor = System.Drawing.Color.Lavender;
             this.panel75.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel75.Location = new System.Drawing.Point(0, 266);
+            this.panel75.Location = new System.Drawing.Point(0, 245);
             this.panel75.Margin = new System.Windows.Forms.Padding(0);
             this.panel75.Name = "panel75";
             this.panel75.Size = new System.Drawing.Size(54, 10);
@@ -1884,27 +1892,28 @@
             // 
             this.panel76.BackColor = System.Drawing.Color.Lavender;
             this.panel76.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel76.Location = new System.Drawing.Point(0, 197);
+            this.panel76.Location = new System.Drawing.Point(0, 176);
             this.panel76.Margin = new System.Windows.Forms.Padding(0);
             this.panel76.Name = "panel76";
             this.panel76.Size = new System.Drawing.Size(54, 10);
             this.panel76.TabIndex = 1;
             // 
-            // panel77
+            // pl_blue_f
             // 
-            this.panel77.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel77.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel77.Location = new System.Drawing.Point(54, 611);
-            this.panel77.Margin = new System.Windows.Forms.Padding(0);
-            this.panel77.Name = "panel77";
-            this.panel77.Size = new System.Drawing.Size(254, 74);
-            this.panel77.TabIndex = 1;
+            this.pl_blue_f.BackColor = System.Drawing.Color.SteelBlue;
+            this.pl_blue_f.Controls.Add(this.lb_blue_f);
+            this.pl_blue_f.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_blue_f.Location = new System.Drawing.Point(54, 631);
+            this.pl_blue_f.Margin = new System.Windows.Forms.Padding(0);
+            this.pl_blue_f.Name = "pl_blue_f";
+            this.pl_blue_f.Size = new System.Drawing.Size(254, 54);
+            this.pl_blue_f.TabIndex = 1;
             // 
             // panel79
             // 
             this.panel79.BackColor = System.Drawing.Color.Lavender;
             this.panel79.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel79.Location = new System.Drawing.Point(54, 542);
+            this.panel79.Location = new System.Drawing.Point(54, 562);
             this.panel79.Margin = new System.Windows.Forms.Padding(0);
             this.panel79.Name = "panel79";
             this.panel79.Size = new System.Drawing.Size(254, 10);
@@ -1914,7 +1923,7 @@
             // 
             this.panel80.BackColor = System.Drawing.Color.Lavender;
             this.panel80.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel80.Location = new System.Drawing.Point(54, 473);
+            this.panel80.Location = new System.Drawing.Point(54, 493);
             this.panel80.Margin = new System.Windows.Forms.Padding(0);
             this.panel80.Name = "panel80";
             this.panel80.Size = new System.Drawing.Size(254, 10);
@@ -1924,27 +1933,28 @@
             // 
             this.panel81.BackColor = System.Drawing.Color.Lavender;
             this.panel81.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel81.Location = new System.Drawing.Point(54, 404);
+            this.panel81.Location = new System.Drawing.Point(54, 424);
             this.panel81.Margin = new System.Windows.Forms.Padding(0);
             this.panel81.Name = "panel81";
             this.panel81.Size = new System.Drawing.Size(254, 10);
             this.panel81.TabIndex = 1;
             // 
-            // panel82
+            // pl_blue_s
             // 
-            this.panel82.BackColor = System.Drawing.Color.Lavender;
-            this.panel82.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel82.Location = new System.Drawing.Point(54, 335);
-            this.panel82.Margin = new System.Windows.Forms.Padding(0);
-            this.panel82.Name = "panel82";
-            this.panel82.Size = new System.Drawing.Size(254, 10);
-            this.panel82.TabIndex = 1;
+            this.pl_blue_s.BackColor = System.Drawing.Color.SteelBlue;
+            this.pl_blue_s.Controls.Add(this.lb_blue_s);
+            this.pl_blue_s.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_blue_s.Location = new System.Drawing.Point(54, 314);
+            this.pl_blue_s.Margin = new System.Windows.Forms.Padding(0);
+            this.pl_blue_s.Name = "pl_blue_s";
+            this.pl_blue_s.Size = new System.Drawing.Size(254, 51);
+            this.pl_blue_s.TabIndex = 1;
             // 
             // panel83
             // 
             this.panel83.BackColor = System.Drawing.Color.Lavender;
             this.panel83.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel83.Location = new System.Drawing.Point(54, 266);
+            this.panel83.Location = new System.Drawing.Point(54, 245);
             this.panel83.Margin = new System.Windows.Forms.Padding(0);
             this.panel83.Name = "panel83";
             this.panel83.Size = new System.Drawing.Size(254, 10);
@@ -1954,7 +1964,7 @@
             // 
             this.panel84.BackColor = System.Drawing.Color.Lavender;
             this.panel84.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel84.Location = new System.Drawing.Point(54, 197);
+            this.panel84.Location = new System.Drawing.Point(54, 176);
             this.panel84.Margin = new System.Windows.Forms.Padding(0);
             this.panel84.Name = "panel84";
             this.panel84.Size = new System.Drawing.Size(254, 10);
@@ -1964,7 +1974,7 @@
             // 
             this.panel85.BackColor = System.Drawing.Color.Lavender;
             this.panel85.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel85.Location = new System.Drawing.Point(54, 128);
+            this.panel85.Location = new System.Drawing.Point(54, 107);
             this.panel85.Margin = new System.Windows.Forms.Padding(0);
             this.panel85.Name = "panel85";
             this.panel85.Size = new System.Drawing.Size(254, 10);
@@ -2057,6 +2067,18 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(348, 387);
             this.tableLayoutPanel1.TabIndex = 43;
             // 
+            // lb_blue
+            // 
+            this.lb_blue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lb_blue.Font = new System.Drawing.Font("굴림", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lb_blue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(171)))), ((int)(((byte)(176)))));
+            this.lb_blue.Location = new System.Drawing.Point(110, 193);
+            this.lb_blue.Name = "lb_blue";
+            this.lb_blue.Size = new System.Drawing.Size(235, 194);
+            this.lb_blue.TabIndex = 0;
+            this.lb_blue.Text = "Count";
+            this.lb_blue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lb_position
             // 
             this.lb_position.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(48)))), ((int)(((byte)(67)))));
@@ -2086,6 +2108,18 @@
             this.lb_name.TabIndex = 38;
             this.lb_name.Text = "📱";
             this.lb_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lb_red
+            // 
+            this.lb_red.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lb_red.Font = new System.Drawing.Font("굴림", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lb_red.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(171)))), ((int)(((byte)(176)))));
+            this.lb_red.Location = new System.Drawing.Point(110, 0);
+            this.lb_red.Name = "lb_red";
+            this.lb_red.Size = new System.Drawing.Size(235, 193);
+            this.lb_red.TabIndex = 0;
+            this.lb_red.Text = "Count";
+            this.lb_red.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel_bottom
             // 
@@ -2212,29 +2246,57 @@
             this.bt_empty.UseVisualStyleBackColor = false;
             this.bt_empty.Click += new System.EventHandler(this.bt_empty_Click);
             // 
-            // lb_blue
+            // lb_red_f
             // 
-            this.lb_blue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lb_blue.Font = new System.Drawing.Font("굴림", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lb_blue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(171)))), ((int)(((byte)(176)))));
-            this.lb_blue.Location = new System.Drawing.Point(110, 193);
-            this.lb_blue.Name = "lb_blue";
-            this.lb_blue.Size = new System.Drawing.Size(235, 194);
-            this.lb_blue.TabIndex = 0;
-            this.lb_blue.Text = "Count";
-            this.lb_blue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_red_f.AutoSize = true;
+            this.lb_red_f.Font = new System.Drawing.Font("굴림", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lb_red_f.ForeColor = System.Drawing.Color.Snow;
+            this.lb_red_f.Location = new System.Drawing.Point(36, 8);
+            this.lb_red_f.Margin = new System.Windows.Forms.Padding(0);
+            this.lb_red_f.Name = "lb_red_f";
+            this.lb_red_f.Size = new System.Drawing.Size(193, 37);
+            this.lb_red_f.TabIndex = 0;
+            this.lb_red_f.Text = "First Store";
+            this.lb_red_f.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lb_red
+            // lb_red_s
             // 
-            this.lb_red.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lb_red.Font = new System.Drawing.Font("굴림", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lb_red.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(171)))), ((int)(((byte)(176)))));
-            this.lb_red.Location = new System.Drawing.Point(110, 0);
-            this.lb_red.Name = "lb_red";
-            this.lb_red.Size = new System.Drawing.Size(235, 193);
-            this.lb_red.TabIndex = 0;
-            this.lb_red.Text = "Count";
-            this.lb_red.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_red_s.AutoSize = true;
+            this.lb_red_s.Font = new System.Drawing.Font("굴림", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lb_red_s.ForeColor = System.Drawing.Color.Snow;
+            this.lb_red_s.Location = new System.Drawing.Point(7, 6);
+            this.lb_red_s.Margin = new System.Windows.Forms.Padding(0);
+            this.lb_red_s.Name = "lb_red_s";
+            this.lb_red_s.Size = new System.Drawing.Size(249, 37);
+            this.lb_red_s.TabIndex = 0;
+            this.lb_red_s.Text = "Second Store";
+            this.lb_red_s.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lb_blue_s
+            // 
+            this.lb_blue_s.AutoSize = true;
+            this.lb_blue_s.Font = new System.Drawing.Font("굴림", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lb_blue_s.ForeColor = System.Drawing.Color.Snow;
+            this.lb_blue_s.Location = new System.Drawing.Point(3, 5);
+            this.lb_blue_s.Margin = new System.Windows.Forms.Padding(0);
+            this.lb_blue_s.Name = "lb_blue_s";
+            this.lb_blue_s.Size = new System.Drawing.Size(249, 37);
+            this.lb_blue_s.TabIndex = 0;
+            this.lb_blue_s.Text = "Second Store";
+            this.lb_blue_s.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lb_blue_f
+            // 
+            this.lb_blue_f.AutoSize = true;
+            this.lb_blue_f.Font = new System.Drawing.Font("굴림", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lb_blue_f.ForeColor = System.Drawing.Color.Snow;
+            this.lb_blue_f.Location = new System.Drawing.Point(31, 8);
+            this.lb_blue_f.Margin = new System.Windows.Forms.Padding(0);
+            this.lb_blue_f.Name = "lb_blue_f";
+            this.lb_blue_f.Size = new System.Drawing.Size(193, 37);
+            this.lb_blue_f.TabIndex = 0;
+            this.lb_blue_f.Text = "First Store";
+            this.lb_blue_f.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Warehouse
             // 
@@ -2265,6 +2327,10 @@
             this.ph2_red.ResumeLayout(false);
             this.ph1_red.ResumeLayout(false);
             this.panel88.ResumeLayout(false);
+            this.pl_red_f.ResumeLayout(false);
+            this.pl_red_f.PerformLayout();
+            this.pl_red_s.ResumeLayout(false);
+            this.pl_red_s.PerformLayout();
             this.tLP_blue.ResumeLayout(false);
             this.ph8_blue.ResumeLayout(false);
             this.ph7_blue.ResumeLayout(false);
@@ -2275,6 +2341,10 @@
             this.ph2_blue.ResumeLayout(false);
             this.ph1_blue.ResumeLayout(false);
             this.panel38.ResumeLayout(false);
+            this.pl_blue_f.ResumeLayout(false);
+            this.pl_blue_f.PerformLayout();
+            this.pl_blue_s.ResumeLayout(false);
+            this.pl_blue_s.PerformLayout();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
@@ -2414,11 +2484,11 @@
         private System.Windows.Forms.Panel panel123;
         private System.Windows.Forms.Panel panel124;
         private System.Windows.Forms.Panel panel125;
-        private System.Windows.Forms.Panel panel126;
+        private System.Windows.Forms.Panel pl_red_f;
         private System.Windows.Forms.Panel panel128;
         private System.Windows.Forms.Panel panel129;
         private System.Windows.Forms.Panel panel130;
-        private System.Windows.Forms.Panel panel131;
+        private System.Windows.Forms.Panel pl_red_s;
         private System.Windows.Forms.Panel panel132;
         private System.Windows.Forms.Panel panel133;
         private System.Windows.Forms.Panel panel134;
@@ -2439,11 +2509,11 @@
         private System.Windows.Forms.Panel panel74;
         private System.Windows.Forms.Panel panel75;
         private System.Windows.Forms.Panel panel76;
-        private System.Windows.Forms.Panel panel77;
+        private System.Windows.Forms.Panel pl_blue_f;
         private System.Windows.Forms.Panel panel79;
         private System.Windows.Forms.Panel panel80;
         private System.Windows.Forms.Panel panel81;
-        private System.Windows.Forms.Panel panel82;
+        private System.Windows.Forms.Panel pl_blue_s;
         private System.Windows.Forms.Panel panel83;
         private System.Windows.Forms.Panel panel84;
         private System.Windows.Forms.Panel panel85;
@@ -2454,5 +2524,9 @@
         private System.Windows.Forms.Button bt_add_red;
         private System.Windows.Forms.Label lb_blue;
         private System.Windows.Forms.Label lb_red;
+        private System.Windows.Forms.Label lb_red_f;
+        private System.Windows.Forms.Label lb_red_s;
+        private System.Windows.Forms.Label lb_blue_f;
+        private System.Windows.Forms.Label lb_blue_s;
     }
 }

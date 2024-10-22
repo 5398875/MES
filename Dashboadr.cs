@@ -8,17 +8,29 @@ using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MES
 {
+    /*
+    왜 MySQL에 Threading.Timer를 더 많이 사용하나요?
+MySQL 데이터베이스 접근과 같은 작업은 UI 스레드와 분리된 백그라운드 작업으로 처리하는 것이 더 효율적이고 성능상 유리합니다. 
+    이런 작업은 CPU를 많이 사용하거나 시간이 걸릴 수 있기 때문에, 
+    메인 UI 스레드의 성능에 영향을 주지 않도록 별도의 스레드에서 처리하는 것이 좋습니다.
+
+애니메이션에 Windows.Forms.Timer를 사용하는 이유는?
+애니메이션과 같은 작업은 UI 스레드에서 실행되어야 합니다. 
+    UI 요소를 업데이트하기 위해서는 메인 스레드에서 실행되어야 안정적인 화면 렌더링이 가능합니다. 
+    따라서 Windows.Forms.Timer를 사용해 UI 업데이트를 처리하는 것이 더 적합합니다.*/
     public partial class Dashboard : Form
     {
-        private Timer timer;
+        
+        private System.Threading.Timer dbTimer;
         
         private Dictionary<Panel, List<Panel>> panelGroups = new Dictionary<Panel, List<Panel>>();
-        private Dictionary<Panel, Timer> animationTimers = new Dictionary<Panel, Timer>();
+        
         private int panelSize;
 
         public Dashboard()
@@ -26,21 +38,20 @@ namespace MES
             InitializeComponent();
             panelSize = pl_con_p.Width;
 
-            // Timer 설정
-            timer = new Timer();
-            timer.Interval = 1000; // 1초마다 신호 체크
-            timer.Tick += new EventHandler(Timer_Tick);
-            timer.Start();
+            // Timer 설정          
+            dbTimer = new System.Threading.Timer(new TimerCallback(DbTimer_Tick), null, 0, 2500);
 
             pl_con_p.Resize += new EventHandler(Panel_Resize);
         }
 
+
         private void Panel_Resize(object sender, EventArgs e)
         {
             panelSize = pl_con_p.Width; // 패널 크기 업데이트
+            // float newFontSize = panelSize * 0.1f; // 적절한 비율로 폰트 크기 설정 
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private void DbTimer_Tick(object sender)
         {
             //if (animationTimers.Values.Any(timer => timer.Enabled)) return; // 애니메이션 중이면 새로운 패널 생성하지 않음
 
@@ -54,119 +65,116 @@ namespace MES
                     {
                         if (reader.Read())
                         {
-                            int[] xValues = new int[32]; // X00부터 X1F까지
-                            int x5c;
-                            int x5d;
-                            for (int i = 0; i < xValues.Length; i++)
+                            this.Invoke((MethodInvoker)delegate
                             {
-                                //xValues[i] = Convert.ToInt32(reader[$"x{i:X2}"]);
-                                //System.InvalidCastException: '개체를 DBNull에서 다른 형식으로 캐스팅할 수 없습니다
-
-                                if (reader.IsDBNull(reader.GetOrdinal($"x{i:X2}")))
+                                int[] xValues = new int[32]; // X00부터 X1F까지
+                                int x5c;
+                                int x5d;
+                                for (int i = 0; i < xValues.Length; i++)
                                 {
-                                    xValues[i] = 0; // 기본값 설정
+                                    //xValues[i] = Convert.ToInt32(reader[$"x{i:X2}"]);
+                                    //System.InvalidCastException: '개체를 DBNull에서 다른 형식으로 캐스팅할 수 없습니다
+
+                                    if (reader.IsDBNull(reader.GetOrdinal($"x{i:X2}")))
+                                    {
+                                        xValues[i] = 0; // 기본값 설정
+                                    }
+                                    else
+                                    {
+                                        xValues[i] = Convert.ToInt32(reader[$"x{i:X2}"]);
+                                    }
+                                }
+
+                                int[] yValues = new int[16]; // Y30부터 Y3F까지
+                                for (int i = 0; i < yValues.Length; i++)
+                                {
+                                    if (reader.IsDBNull(reader.GetOrdinal($"y{(0x30 + i):X2}")))
+                                    {
+                                        yValues[i] = 0; // 기본값 설정
+                                    }
+                                    else
+                                    {
+                                        yValues[i] = Convert.ToInt32(reader[$"y{(0x30 + i):X2}"]); // 여기가 y 컬럼 이름 참조하는 부분
+                                    }
+                                }
+                                if (reader.IsDBNull(reader.GetOrdinal("x5c")))
+                                {
+                                    x5c = 0;
                                 }
                                 else
                                 {
-                                    xValues[i] = Convert.ToInt32(reader[$"x{i:X2}"]);
+                                    x5c = Convert.ToInt32(reader["x5c"]);
                                 }
-                            }
-
-                            int[] yValues = new int[16]; // Y30부터 Y3F까지
-                            for (int i = 0; i < yValues.Length; i++)
-                            {
-                                if (reader.IsDBNull(reader.GetOrdinal($"y{(0x30 + i):X2}")))
+                                if (reader.IsDBNull(reader.GetOrdinal("x5d")))
                                 {
-                                    yValues[i] = 0; // 기본값 설정
+                                    x5d = 0;
                                 }
                                 else
                                 {
-                                    yValues[i] = Convert.ToInt32(reader[$"y{(0x30 + i):X2}"]); // 여기가 y 컬럼 이름 참조하는 부분
+                                    x5d = Convert.ToInt32(reader["x5d"]);
                                 }
-                            }
-                            if (reader.IsDBNull(reader.GetOrdinal("x5c")))
-                            {
-                                x5c = 0;
-                            }
-                            else
-                            {
-                                x5c = Convert.ToInt32(reader["x5c"]);
-                            }
-                            if (reader.IsDBNull(reader.GetOrdinal("x5d")))
-                            {
-                                x5d = 0;
-                            }
-                            else
-                            {
-                                x5d = Convert.ToInt32(reader["x5d"]);
-                            }
-                          
-                            //컨베이어1(핸드폰 시작부)
-                            if (xValues[0] == 1)
-                            {
-                                CreateNewPanel(0x00, GetImageBasedOnXValue(0x00), GetParentPanelBasedOnXValue(0x00), "top");
-                            }
 
-                            // 첫 번째 패널이 최하단에 도달했을 때만 패널을 삭제
-                            if (xValues[1] == 1 && panelGroups.ContainsKey(pl_con_p) && panelGroups[pl_con_p].Count > 0 && panelGroups[pl_con_p].First().Bottom + panelGroups[pl_con_p].First().Margin.Bottom >= GetParentPanelBasedOnXValue(0x01).Height)
-                            {
-                                DeleteOldestPanel(GetParentPanelBasedOnXValue(0x01), "top");
-                            }
+                                if(xValues[0] == 1)
+                                {
+                                    CreateNewPanel(0x00, GetImageBasedOnXValue(0x00), GetParentPanelBasedOnXValue(0x00), "top");
+                                }
 
-                            //컨베이어4(핸드폰 중간)
-                            if (xValues[1] == 1)
-                            {
-                                CreateNewPanelForX01(0x01, GetImageBasedOnXValue(0x01), pl_con_press);
-                            }
+                                // 첫 번째 패널이 최하단에 도달했을 때만 패널을 삭제
+                                if (xValues[1] == 1 && panelGroups.ContainsKey(pl_con_p) && panelGroups[pl_con_p].Count > 0 && panelGroups[pl_con_p].First().Bottom + panelGroups[pl_con_p].First().Margin.Bottom >= GetParentPanelBasedOnXValue(0x01).Height)
+                                {
+                                    DeleteOldestPanel(GetParentPanelBasedOnXValue(0x01), "top");
+                                }
 
-                            // 첫 번째 패널이 좌측에 도달했을 때만 패널을 삭제
-                            if (xValues[9] == 1 && panelGroups.ContainsKey(pl_con_press) && panelGroups[pl_con_press].Count > 0 && panelGroups[pl_con_press].First().Left + panelGroups[pl_con_press].First().Margin.Left >= GetParentPanelBasedOnXValue(0x09).Width)
-                            {
-                                DeleteOldestPanel(GetParentPanelBasedOnXValue(0x09), "left");
-                            }
+                                //컨베이어4(핸드폰 중간)
+                                if (xValues[1] == 1)
+                                {
+                                    CreateNewPanelForX01(0x01, GetImageBasedOnXValue(0x01), pl_con_press);
+                                }
 
+                                // 첫 번째 패널이 좌측에 도달했을 때만 패널을 삭제
+                                if (xValues[9] == 1 && panelGroups.ContainsKey(pl_con_press) && panelGroups[pl_con_press].Count > 0 && panelGroups[pl_con_press].First().Left + panelGroups[pl_con_press].First().Margin.Left >= GetParentPanelBasedOnXValue(0x09).Width)
+                                {
+                                    DeleteOldestPanel(GetParentPanelBasedOnXValue(0x09), "left");
+                                } 
+                                
 
-                            //컨베이어5(핸드폰 적재부)
-                            if (xValues[9] == 1)
-                            {
-                                CreateNewPanelForX09(0x09, GetImageBasedOnXValue(0x09), pl_con_photo);
-                            }
+                                //컨베이어5(핸드폰 적재부)
+                                if (xValues[9] == 1)
+                                {
+                                    CreateNewPanelForX09(0x09, GetImageBasedOnXValue(0x09), pl_con_photo);
+                                }
 
-                            // 첫 번째 패널이 최상단에 도달했을 때만 패널을 삭제
-                            if (xValues[10] == 1 && panelGroups.ContainsKey(pl_con_photo) && panelGroups[pl_con_photo].Count > 0 && panelGroups[pl_con_photo].First().Top + panelGroups[pl_con_photo].First().Margin.Top >= GetParentPanelBasedOnXValue(0x0A).Height)
-                            {
-                                DeleteOldestPanel(GetParentPanelBasedOnXValue(0x0A), "bottom");
-                            }
-                            /*
-                            if (xValues[10] == 1 && panelGroups[pl_con_photo].Count > 0 && panelGroups[pl_con_photo].First().Top + panelGroups[pl_con_photo].First().Margin.Top >= GetParentPanelBasedOnXValue(0x0A).Height)
-                            {
-                                DeleteOldestPanel(GetParentPanelBasedOnXValue(0x0A), "bottom");
-                            }
-                            */
-                            //컨베이어2 배터리
-                            if (xValues[2] == 1)
-                            {
-                                CreateNewPanel(0x02, GetImageBasedOnXValue(0x02), GetParentPanelBasedOnXValue(0x02), "top");
-                            }
+                                // 첫 번째 패널이 최상단에 도달했을 때만 패널을 삭제
+                                if (xValues[10] == 1 && panelGroups.ContainsKey(pl_con_photo) && panelGroups[pl_con_photo].Count > 0 && panelGroups[pl_con_photo].First().Top + panelGroups[pl_con_photo].First().Margin.Top <= 0)
+                                {
+                                    DeleteOldestPanel(GetParentPanelBasedOnXValue(0x0A), "bottom");
+                                }
+                             
+                                //컨베이어2 배터리
+                                if (xValues[2] == 1)
+                                {
+                                    CreateNewPanel(0x02, GetImageBasedOnXValue(0x02), GetParentPanelBasedOnXValue(0x02), "top");
+                                }
 
-                            // 첫 번째 패널이 최하단에 도달했을 때만 패널을 삭제
-                            if (xValues[3] == 1 && panelGroups.ContainsKey(pl_con_b) && panelGroups[pl_con_b].Count > 0 && panelGroups[pl_con_b].First().Bottom + panelGroups[pl_con_b].First().Margin.Bottom >= GetParentPanelBasedOnXValue(0x03).Height)
-                            {
-                                DeleteOldestPanel(GetParentPanelBasedOnXValue(0x03), "top");
-                            }
+                                // 첫 번째 패널이 최하단에 도달했을 때만 패널을 삭제
+                                if (xValues[3] == 1 && panelGroups.ContainsKey(pl_con_b) && panelGroups[pl_con_b].Count > 0 && panelGroups[pl_con_b].First().Bottom + panelGroups[pl_con_b].First().Margin.Bottom >= GetParentPanelBasedOnXValue(0x03).Height)
+                                {
+                                    DeleteOldestPanel(GetParentPanelBasedOnXValue(0x03), "top");
+                                }
 
-                            //컨베이어3 케이스
-                            if (xValues[5] == 1)
-                            {
-                                CreateNewPanel(0x05, GetImageBasedOnXValue(0x05), GetParentPanelBasedOnXValue(0x05), "top");
-                            }
+                                //컨베이어3 케이스
+                                if (xValues[5] == 1)
+                                {
+                                    CreateNewPanel(0x05, GetImageBasedOnXValue(0x05), GetParentPanelBasedOnXValue(0x05), "top");
+                                }
 
-                            // 첫 번째 패널이 최하단에 도달했을 때만 패널을 삭제
-                            if (xValues[6] == 1 && panelGroups.ContainsKey(pl_con_c) && panelGroups[pl_con_c].Count > 0 && panelGroups[pl_con_c].First().Bottom + panelGroups[pl_con_c].First().Margin.Bottom >= GetParentPanelBasedOnXValue(0x06).Height)
-                            {
-                                DeleteOldestPanel(GetParentPanelBasedOnXValue(0x06), "top");
-                            }
-
+                                // 첫 번째 패널이 최하단에 도달했을 때만 패널을 삭제
+                                if (xValues[6] == 1 && panelGroups.ContainsKey(pl_con_c) && panelGroups[pl_con_c].Count > 0 && panelGroups[pl_con_c].First().Bottom + panelGroups[pl_con_c].First().Margin.Bottom >= GetParentPanelBasedOnXValue(0x06).Height)
+                                {
+                                    DeleteOldestPanel(GetParentPanelBasedOnXValue(0x06), "top");
+                                }                              
+                             
+                            });
                         }
                     }
                 }
@@ -210,17 +218,38 @@ namespace MES
             // 최대 패널 개수 제한을 5로 설정
             if (panelGroups[parentPanel].Count >= 5) return;
 
-            Point location = new Point(0, parentPanel.Height); // bottom 위치에서 시작
+            Point location = new Point(0, parentPanel.Height - panelSize); // bottom 위치에서 시작
 
             Panel newPanel = new Panel
             {
                 Size = new Size(panelSize, panelSize),
                 Location = location,
                 BackgroundImage = backgroundImage,
-                BackgroundImageLayout = ImageLayout.Stretch
+                BackgroundImageLayout = ImageLayout.Stretch,
+                Visible = true
             };
+     
+            /*
+            // 디버깅용 로그 출력
+            //Console.WriteLine($"Creating panel for x09: Size = {newPanel.Size}, Location = {newPanel.Location}, ParentPanel = {parentPanel.Name}");
+            // 부모 패널의 크기와 생성된 패널의 위치 확인
+            Console.WriteLine($"Parent Panel Size: {parentPanel.Size}, New Panel Location: {newPanel.Location}");
 
-            parentPanel.Controls.Add(newPanel);
+            // 조건으로 확인
+            if (newPanel.Location.Y + newPanel.Size.Height <= parentPanel.Size.Height && newPanel.Location.X + newPanel.Size.Width <= parentPanel.Size.Width)
+            {
+                Console.WriteLine("패널 위치가 적절합니다.");
+            }
+            else
+            {
+                Console.WriteLine("패널 위치가 부모 패널의 경계를 벗어났습니다.");
+            }
+            */
+
+           parentPanel.Controls.Add(newPanel); 
+            //System.InvalidOperationException: '크로스 스레드 작업이 잘못되었습니다.
+            //'pl_con_photo' 컨트롤이 자신이 만들어진 스레드가 아닌 스레드에서 액세스되었습니다.
+
             panelGroups[parentPanel].Add(newPanel);
             AnimatePanel(newPanel, parentPanel, "bottom");
         }
@@ -275,6 +304,8 @@ namespace MES
                     return new Point(0, 0); // 부모 패널의 top 위치에서 삭제
                 case 0x09:
                     return new Point(0, parentPanel.Height); // 부모 패널의 bottom 위치에서 시작
+                case 0x0A:
+                    return new Point(0, parentPanel.Height); // 부모 패널의 bottom 위치에서 시작
                 default:
                     return new Point(0, 0); // 기본 위치
             }
@@ -304,7 +335,7 @@ namespace MES
                 case 0x08:
                     return pl_con_press;
                 case 0x09:
-                    return pl_con_photo;
+                    return pl_con_press;
                 case 0x0A:
                     return pl_con_photo;
                 default:
@@ -345,6 +376,8 @@ namespace MES
             }
         }
 
+
+        private Dictionary<Panel, System.Windows.Forms.Timer> animationTimers = new Dictionary<Panel, System.Windows.Forms.Timer>();
         private void AnimatePanel(Panel panel, Panel parentPanel, string startPosition)
         {
             bool animationComplete = false;
@@ -352,12 +385,13 @@ namespace MES
             {
                 return; // 이미 타이머가 있으면 새로 생성하지 않음
             }
-            Timer animationTimer = new Timer
+
+            System.Windows.Forms.Timer animationTimer = new System.Windows.Forms.Timer
             {
                 Interval = 10 // 애니메이션 속도 조절
             };
             animationTimers[panel] = animationTimer;
-
+        
             animationTimer.Tick += (s, e) =>
             {
                 switch (startPosition)
@@ -375,12 +409,13 @@ namespace MES
                         break;
 
                     case "bottom":
-                        int targetTopPosition = parentPanel.Height - panelSize * (panelGroups[parentPanel].IndexOf(panel));
+                        int targetTopPosition = panelSize * (panelGroups[parentPanel].IndexOf(panel));
+                       
                         if (panel.Top <= targetTopPosition)
                         {
                             animationComplete = true;
                         }
-                        else
+                        else                        
                         {
                             panel.Top -= 1;
                         }
@@ -406,7 +441,7 @@ namespace MES
                 if (animationComplete)
                 {
                     animationTimer.Stop();
-                    animationTimers.Remove(panel); // 애니메이션 완료 후 타이머 제거
+                    animationTimers.Remove(panel); // 애니메이션 완료 후 타이머 제거                   
                 }
 
             };
@@ -426,13 +461,14 @@ namespace MES
                 parentPanel.Controls.Remove(oldestPanel);
                 panelGroups[parentPanel].Remove(oldestPanel);
 
-                // 남은 패널들을 아래로 이동
+                // 남은 패널들을 이동
                 foreach (var panel in panelGroups[parentPanel])
                 {
                     AnimatePanel(panel, parentPanel, startPosition);
                 }
             }
         }
+
     }
 }
 
